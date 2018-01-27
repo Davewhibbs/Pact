@@ -35,7 +35,7 @@
 			if alarm[1] <= 0{
 				image_index = 0;
 				alarm[1] = attack_timer;
-				alarm[2] = combo_timer;
+				
 				state = states.attack;
 			}
 		}
@@ -74,15 +74,7 @@
 			attack_dir = 0;
 		}
 #endregion		
-		// Determine if we are in the air or not
-		if location == AIR
-		{
-			instance_create_layer(x + attack_offset * dir, y, "Instances", o_hitbox);
-		}
-		else
-		{
-			instance_create_layer(x + attack_offset * dir, y, "Instances", o_hitbox);
-		}
+		
 		
 		
 		

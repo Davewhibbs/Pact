@@ -25,8 +25,8 @@ sequenceCount = 0;	//Combo counter
 
 // Attacking
 attack_offset = 32;
-attack_timer = 5;
-combo_timer = 10;
+attack_timer = 10;
+combo_timer = 30;
 alarm[1] = 0;
 alarm[2] = 0;
 combo[0] = s_player_combo0;
@@ -40,6 +40,7 @@ combo[2] = s_player_combo2;
 Sprite[GROUND, IDLE]	= s_player_idle;
 Sprite[GROUND, MOVE]	= s_player_run;
 Sprite[GROUND, ATTACK]	= s_player_combo0;
+Sprite[AIR, ATTACK]	= s_player_combo0;
 Sprite[GROUND, JUMP]	= s_player_jump;
 Sprite[AIR,	JUMP]		= s_player_jump;
 Sprite[AIR, FALL]		= s_player_fall;
