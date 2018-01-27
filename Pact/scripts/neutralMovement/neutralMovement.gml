@@ -15,7 +15,15 @@ else{
 // Check if we're NOT on the floor
 if !place_meeting(x, y+1, o_wall)
 {
-	velocity[v] = Approach(velocity[v], max_fall_speed, grav);
+	// Fast fall
+	if y_input > 0 {
+		velocity[v] = Approach(velocity[v], fast_fall_speed, acceleration);
+	}
+	// Slow fall
+	else {
+		velocity[v] = Approach(velocity[v], fall_speed, grav);
+	}
+	
 	location = AIR;
 	
 	// Change to fall if our vertical velocity is greater than 0

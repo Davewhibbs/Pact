@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "16cce4e8-cbc5-46c4-b54b-5cbed6892e2a",
+            "Value": {
+                "id": "e741dd43-c872-4bd1-95cf-360b5c014d10",
+                "resourcePath": "sprites\\s_hitbox\\s_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "23c49602-7a28-441d-a934-e2b65e8f31c6",
             "Value": {
                 "id": "2bb00a07-df75-472f-be4f-6b777b994eb7",
@@ -132,6 +140,14 @@
                 "id": "bee1c0b6-bfa9-4722-a885-df15548cafad",
                 "resourcePath": "scripts\\dodgeMovement\\dodgeMovement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "65c9b7f1-75c5-4025-a52f-8e6f766965b7",
+            "Value": {
+                "id": "6c42fcab-149a-4fc8-8cf9-568ce490601c",
+                "resourcePath": "objects\\o_hitbox\\o_hitbox.yy",
+                "resourceType": "GMObject"
             }
         },
         {

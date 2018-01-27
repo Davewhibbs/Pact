@@ -1,7 +1,8 @@
 dir = 1;
 
 velocity = [0,0];
-max_fall_speed = 5;
+fall_speed = 8;
+fast_fall_speed = 25;
 max_speed = 8;
 acceleration = 1;
 spd = 3;
@@ -15,18 +16,22 @@ jump_height = -10;
 max_dodges = 1;
 dodges = max_dodges;
 dodge_timer = 20;
-dodge_spd = 13;
+dodge_speed = 10;
 alarm[0] = 0;
 
 location = GROUND;
 action = IDLE;
-SequenceCount = 0;	//Combo counter
-State = 0;
+sequenceCount = 0;	//Combo counter
 
-// Ground Combo sprite array
-GroundCombo[0] = s_player_combo0;
-GroundCombo[1] = s_player_combo1;
-GroundCombo[2] = s_player_combo2;
+// Attacking
+attack_offset = 32;
+attack_timer = 5;
+combo_timer = 10;
+alarm[1] = 0;
+alarm[2] = 0;
+combo[0] = s_player_combo0;
+combo[1] = s_player_combo1;
+combo[2] = s_player_combo2;
 
 // Aerial Combo sprite array
 

@@ -24,7 +24,7 @@ if gamepad_is_connected(0)
 	var haxis = gamepad_axis_value(0, gp_axislh);
 	var vaxis = gamepad_axis_value(0, gp_axislv);
 	
-	input_attack = gamepad_button_check(0, gp_face3);
+	input_attack = gamepad_button_check_pressed(0, gp_face3);
 	input_jump	 = gamepad_button_check_pressed(0, gp_face1);
 	input_dodge	 = gamepad_button_check_pressed(0, gp_shoulderlb);
 	input_dodge	 = gamepad_button_check_pressed(0, gp_shoulderrb);

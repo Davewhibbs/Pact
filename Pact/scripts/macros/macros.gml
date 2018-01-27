@@ -16,4 +16,4 @@
 // Velocity
 #macro h 0
 #macro v 1
-#macro grav .7
+#macro grav .5

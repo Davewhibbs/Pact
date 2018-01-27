@@ -17,7 +17,8 @@
 		{
 			if(dodges > 0){
 				if alarm[0] <= 0{
-					dodges--
+					image_index = 0;		// Reset animation
+					dodges--				// If in the air, you can't dodge again
 					alarm[0] = dodge_timer;
 					state = states.dodge;
 				}
@@ -29,7 +30,15 @@
 		// Heal
 		
 		// Attack
-		
+		if input_attack
+		{
+			if alarm[1] <= 0{
+				image_index = 0;
+				alarm[1] = attack_timer;
+				alarm[2] = combo_timer;
+				state = states.attack;
+			}
+		}
 		
 	}
 
@@ -39,13 +48,51 @@
 #region Attack
 	else if state == states.attack{
 		//------------FUNCTIONALITY
+		// reset movement
+		velocity = [0,0];
 		
+#region		// Determine direction of attack
+		var attack_dir = 0;
+		if x_input > 0 && abs(x_input) > abs(y_input)
+		{
+			attack_dir = 1;	//right
+		}
+		else if x_input < 0 && abs(x_input) > abs(y_input)
+		{
+			attack_dir = 2; //left
+		}
+		else if y_input < 0 && abs(y_input) > abs(x_input)
+		{
+			attack_dir = 3; //UP
+		}
+		else if y_input > 0 && abs(y_input) > abs(x_input)
+		{
+			attack_dir = 4; //down
+		}
+		else if x_input == 0 && y_input == 0
+		{
+			attack_dir = 0;
+		}
+#endregion		
+		// Determine if we are in the air or not
+		if location == AIR
+		{
+			instance_create_layer(x + attack_offset * dir, y, "Instances", o_hitbox);
+		}
+		else
+		{
+			instance_create_layer(x + attack_offset * dir, y, "Instances", o_hitbox);
+		}
+		
+		
+		
+		Sprite[@ GROUND, ATTACK] = combo[sequenceCount];
 		
 		//------------STATE SWITCHES
 		
 		
 		//------------SPRITE
-		
+		action = ATTACK;
 	
 	}
 #endregion
