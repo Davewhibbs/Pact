@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "3b1201b1-c6a4-4a21-94c3-9f124105698f",
+            "Value": {
+                "id": "33bbe5e0-9179-40eb-b85c-8cfea554ad66",
+                "resourcePath": "scripts\\CreateHitBox\\CreateHitBox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3c481b57-c51f-4da8-8013-f392f5b30750",
             "Value": {
                 "id": "b39a92cd-e671-4cf7-8c5d-394a1b8df376",
@@ -263,6 +271,14 @@
             }
         },
         {
+            "Key": "bab6c555-5f74-4867-b511-d21074b0e174",
+            "Value": {
+                "id": "30ba5b62-9e4b-4a2a-8056-e11ee1d4f78d",
+                "resourcePath": "scripts\\SetHitBoxAlarm\\SetHitBoxAlarm.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bc002d71-4b7a-437c-b432-c28f54b397e6",
             "Value": {
                 "id": "0ee77750-32e6-4cc4-83bc-0f3e04ea30a6",
@@ -391,7 +407,9 @@
         "1638ac2a-4fb0-4c7f-887c-fc86bba8a7fc",
         "fd068cab-607a-4c7d-8f5c-bd496c798807",
         "23c49602-7a28-441d-a934-e2b65e8f31c6",
-        "bc002d71-4b7a-437c-b432-c28f54b397e6"
+        "bc002d71-4b7a-437c-b432-c28f54b397e6",
+        "bab6c555-5f74-4867-b511-d21074b0e174",
+        "3b1201b1-c6a4-4a21-94c3-9f124105698f"
     ],
     "tutorial": ""
 }

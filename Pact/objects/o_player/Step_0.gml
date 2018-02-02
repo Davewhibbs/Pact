@@ -18,7 +18,7 @@
 			if(dodges > 0){
 				if alarm[0] <= 0{
 					image_index = 0;		// Reset animation
-					dodges--				// If in the air, you can't dodge again
+					dodges--;				// If in the air, you can't dodge again
 					alarm[0] = dodge_timer;
 					state = states.dodge;
 				}
@@ -49,13 +49,14 @@
 	else if state == states.attack{
 		//------------FUNCTIONALITY
 		// reset movement
-		velocity = [0,0];
+		//velocity = [0,0];
 		
 #region		// Determine direction of attack
 		var attack_dir = 0;
 		if x_input > 0 && abs(x_input) > abs(y_input)
 		{
 			attack_dir = 1;	//right
+			
 		}
 		else if x_input < 0 && abs(x_input) > abs(y_input)
 		{

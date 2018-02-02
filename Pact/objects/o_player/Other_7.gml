@@ -1,10 +1,7 @@
 // Some states change at the end of animations
 
 switch(state)
-{
-	case states.neutral:
-		break;
-		
+{	
 	case states.attack:
 		alarm[2] = combo_timer;
 		sequenceCount++;
@@ -18,10 +15,10 @@ switch(state)
 		// Determine if we are in the air or not
 		if location == AIR
 		{
-			instance_create_layer(x + attack_offset * dir, y, "Instances", o_hitbox);
+			CreateHitBox(x + attack_offset * dir, y, 1, 1);
 		}
 		else
 		{
-			instance_create_layer(x + attack_offset * dir, y, "Instances", o_hitbox);
+			CreateHitBox(x + attack_offset * dir, y, 1, 1);
 		}
 }
