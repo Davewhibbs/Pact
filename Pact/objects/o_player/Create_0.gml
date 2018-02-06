@@ -37,7 +37,7 @@ combo[2] = s_player_combo2;
 
 
 // 2D Sprite array
-Sprite[GROUND, IDLE]	= s_player_idle;
+Sprite[GROUND, IDLE]	= s_player_idle_test;
 Sprite[GROUND, MOVE]	= s_player_run;
 Sprite[GROUND, ATTACK]	= s_player_combo0;
 Sprite[AIR, ATTACK]	= s_player_combo0;

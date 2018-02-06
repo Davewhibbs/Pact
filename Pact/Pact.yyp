@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "5e283187-e34d-4c96-b8e2-92ed3a47000a",
+            "Value": {
+                "id": "1079b3c4-b05b-41bd-b24c-c48a2641eaf9",
+                "resourcePath": "views\\5e283187-e34d-4c96-b8e2-92ed3a47000a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "62d8b086-36c7-47a6-a6ed-d2e34c5660b9",
             "Value": {
                 "id": "3f351e26-0595-4bf2-8d62-0d4752da7423",
@@ -156,6 +164,14 @@
                 "id": "6c42fcab-149a-4fc8-8cf9-568ce490601c",
                 "resourcePath": "objects\\o_hitbox\\o_hitbox.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "729e4e01-1310-4d81-b5f0-4672b39646c3",
+            "Value": {
+                "id": "f43f9037-edfb-47ea-8f84-3cce06df1954",
+                "resourcePath": "sprites\\s_player_idle_test\\s_player_idle_test.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -236,6 +252,14 @@
                 "id": "ffaf0aad-8c46-4c14-92f4-d4f8f7e39add",
                 "resourcePath": "views\\9e88ea7a-8be9-4d78-a8fb-94f0b019bd28.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "9ec7f668-adfc-4348-ac8d-d38380e3fcb9",
+            "Value": {
+                "id": "69d2cc09-2d96-48c6-a63a-9c8a3a237e2d",
+                "resourcePath": "objects\\camera\\camera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
