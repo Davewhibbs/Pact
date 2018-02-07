@@ -27,7 +27,22 @@
 		
 		// Hurt
 		
+		// Transform
+		if soulFrags == max_soulFrags {
+			
+			// Transformation script
+		}
+		
 		// Heal
+		if soulFrags >= 1 {
+			if location == GROUND {
+				if input_heal {
+					image_index = 0;
+					alarm[3] = heal_timer;
+					state = states.healing
+				}
+			}
+		}
 		
 		// Attack
 		if input_attack
@@ -48,8 +63,8 @@
 #region Attack
 	else if state == states.attack{
 		//------------FUNCTIONALITY
-		// reset movement
-		//velocity = [0,0];
+		//Movement
+		neutralMovement();
 		
 #region		// Determine direction of attack
 		var attack_dir = 0;
@@ -93,13 +108,42 @@
 #region Healing
 	else if state == states.healing{
 		//------------FUNCTIONALITY
+		getInput();
+		//reset speed
+		velocity = [0,0];
 		
 		
 		//------------STATE SWITCHES
+		// if no longer holding down button, return to neutral state
+		if input_heal == false {
+			state = states.neutral;	
+		}
 		
+		// if the timer is over, heal, decrement soulFrags then return to neutral state
+		if alarm[3] <= 0 {
+			hp += heal_amount;
+			soulFrags--;
+			state = states.neutral;
+		}
+		
+		// Dodge
+		if input_dodge
+		{
+			if(dodges > 0){
+				if alarm[0] <= 0{
+					image_index = 0;		// Reset animation
+					dodges--;				// If in the air, you can't dodge again
+					alarm[0] = dodge_timer;
+					state = states.dodge;
+				}
+			}
+		}
+		
+		
+		// Hurt
 		
 		//------------SPRITE
-		
+		action = HEAL;
 	
 	
 	}

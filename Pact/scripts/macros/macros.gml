@@ -12,6 +12,7 @@
 #macro HURT 6
 #macro DEATH 7
 #macro RESPAWN 8
+#macro HEAL 9
 
 // Velocity
 #macro h 0

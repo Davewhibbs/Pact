@@ -7,7 +7,8 @@ max_speed = 8;
 acceleration = 1;
 spd = 3;
 hp = 100;
-frags = 0;
+soulFrags = 0;
+max_soulFrags = 3;
 max_jumps = 3;
 jumps = max_jumps;
 jump_height = -10;
@@ -33,7 +34,10 @@ combo[0] = s_player_combo0;
 combo[1] = s_player_combo1;
 combo[2] = s_player_combo2;
 
-// Aerial Combo sprite array
+// Healing
+alarm[3] = 0;
+heal_timer = 60;
+heal_amount = 15;
 
 
 // 2D Sprite array
@@ -46,6 +50,8 @@ Sprite[AIR,	JUMP]		= s_player_jump;
 Sprite[AIR, FALL]		= s_player_fall;
 Sprite[GROUND, DODGE]	= s_player_dodge;
 Sprite[AIR, DODGE]	= s_player_dodge;
+Sprite[GROUND, HEAL] =	s_player_heal;
+
 
 // Sprites used
 

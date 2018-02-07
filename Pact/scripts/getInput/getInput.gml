@@ -28,6 +28,7 @@ if gamepad_is_connected(0)
 	input_jump	 = gamepad_button_check_pressed(0, gp_face1);
 	input_dodge	 = gamepad_button_check_pressed(0, gp_shoulderlb);
 	input_dodge	 = gamepad_button_check_pressed(0, gp_shoulderrb);
+	input_heal	 = gamepad_button_check(0, gp_face2);
 	
 	x_input = haxis;
 	y_input = vaxis;

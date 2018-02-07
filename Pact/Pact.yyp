@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "26bdddcc-3638-4dc9-9d7d-56f5071024e1",
+            "Value": {
+                "id": "721637fc-7cb0-4042-8b04-10e72cb4a353",
+                "resourcePath": "sprites\\s_player_heal\\s_player_heal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "35dc658d-ce17-46e4-afd5-31de700faae7",
             "Value": {
                 "id": "252eb04b-5109-4d43-b8fa-093b5dc1ebbd",
@@ -100,6 +108,14 @@
                 "id": "b39a92cd-e671-4cf7-8c5d-394a1b8df376",
                 "resourcePath": "views\\3c481b57-c51f-4da8-8013-f392f5b30750.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3d7912d9-bea9-404a-8009-63681fda87c1",
+            "Value": {
+                "id": "160723aa-fb6a-4ee1-938f-8edd95f4a320",
+                "resourcePath": "sprites\\s_soul\\s_soul.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -239,6 +255,14 @@
             }
         },
         {
+            "Key": "9a57d1cb-3190-4bd7-b9da-fc8e8e3da8cc",
+            "Value": {
+                "id": "3a7eae54-45bc-4c3b-93d5-fd629ce9dd99",
+                "resourcePath": "sprites\\s_soulFragment\\s_soulFragment.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9d43d04c-1eae-4da1-8601-961ee87365b8",
             "Value": {
                 "id": "cebd7ab5-da8a-4a49-9f69-dffedcb40b35",
@@ -279,6 +303,14 @@
             }
         },
         {
+            "Key": "a93f3566-9007-44d3-a0ea-604d6791a6b9",
+            "Value": {
+                "id": "d84ce9c4-70da-4c72-8ea0-83b96fe61dae",
+                "resourcePath": "views\\a93f3566-9007-44d3-a0ea-604d6791a6b9.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "aacef750-6804-43d5-b037-895f561b794e",
             "Value": {
                 "id": "c90e0280-2388-4c33-b466-46f243fe6d37",
@@ -292,6 +324,14 @@
                 "id": "8cc405ba-eafa-487a-b75a-f74a35e4d978",
                 "resourcePath": "views\\b96d56d2-bd03-4985-856e-d88af4b1d0e8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ba9476d2-2cf7-48bc-9c67-0e9ee411cffd",
+            "Value": {
+                "id": "3a9dc96b-7536-4c69-ac13-4df519df743d",
+                "resourcePath": "objects\\o_soulFragment\\o_soulFragment.yy",
+                "resourceType": "GMObject"
             }
         },
         {
