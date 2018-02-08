@@ -50,7 +50,7 @@
             "Key": "1638ac2a-4fb0-4c7f-887c-fc86bba8a7fc",
             "Value": {
                 "id": "61f57c4e-2bcb-436a-824c-8e1033cdc2b3",
-                "resourcePath": "scripts\\jump\\jump.yy",
+                "resourcePath": "scripts\\Jump\\Jump.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -66,7 +66,7 @@
             "Key": "23c49602-7a28-441d-a934-e2b65e8f31c6",
             "Value": {
                 "id": "2bb00a07-df75-472f-be4f-6b777b994eb7",
-                "resourcePath": "scripts\\wallCollision\\wallCollision.yy",
+                "resourcePath": "scripts\\WallCollision\\WallCollision.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -170,7 +170,7 @@
             "Key": "64d33ae2-6b4a-4d4e-b789-e990268f2a33",
             "Value": {
                 "id": "bee1c0b6-bfa9-4722-a885-df15548cafad",
-                "resourcePath": "scripts\\dodgeMovement\\dodgeMovement.yy",
+                "resourcePath": "scripts\\DodgeMovement\\DodgeMovement.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -194,7 +194,7 @@
             "Key": "78c12067-4c69-4b31-b090-b09f102a4413",
             "Value": {
                 "id": "a95882a0-1334-4ae7-a43d-91fd1162bf97",
-                "resourcePath": "scripts\\neutralMovement\\neutralMovement.yy",
+                "resourcePath": "scripts\\NeutralMovement\\NeutralMovement.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -290,7 +290,7 @@
             "Key": "a8d7725a-cc3d-483b-b233-ac02532b1e41",
             "Value": {
                 "id": "40df53aa-7522-46da-9358-d32d93e87ce6",
-                "resourcePath": "scripts\\getInput\\getInput.yy",
+                "resourcePath": "scripts\\GetInput\\GetInput.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -458,7 +458,7 @@
             "Key": "fd068cab-607a-4c7d-8f5c-bd496c798807",
             "Value": {
                 "id": "6e9913d8-3ec6-4b22-919d-02241fa32d1c",
-                "resourcePath": "scripts\\applyMovement\\applyMovement.yy",
+                "resourcePath": "scripts\\ApplyMovement\\ApplyMovement.yy",
                 "resourceType": "GMScript"
             }
         }

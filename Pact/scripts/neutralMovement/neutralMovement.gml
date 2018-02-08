@@ -53,7 +53,7 @@ else
 // Jumping
 if input_jump
 {
-	jump();
+	Jump();
 }
 
 

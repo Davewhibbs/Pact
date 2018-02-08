@@ -6,10 +6,10 @@
 	if state == states.neutral{
 		//------------FUNCTIONALITY
 		// Get input
-		getInput();
+		GetInput();
 		
 		// Move freely
-		neutralMovement();
+		NeutralMovement();
 		
 		//------------STATE SWITCHES
 		// Dodge
@@ -64,7 +64,7 @@
 	else if state == states.attack{
 		//------------FUNCTIONALITY
 		//Movement
-		neutralMovement();
+		NeutralMovement();
 		
 #region		// Determine direction of attack
 		var attack_dir = 0;
@@ -108,7 +108,7 @@
 #region Healing
 	else if state == states.healing{
 		//------------FUNCTIONALITY
-		getInput();
+		GetInput();
 		//reset speed
 		velocity = [0,0];
 		
@@ -182,7 +182,7 @@
 #region Dodge
 	else if state == states.dodge{
 		//------------FUNCTIONALITY
-		dodgeMovement();
+		DodgeMovement();
 		
 		//------------STATE SWITCHES
 		if alarm[0] <= 10{
@@ -223,9 +223,9 @@
 #endregion
 
 //------------WALL COLLISION
-wallCollision();
+WallCollision();
 
 //------------APPLY MOVEMENT
-applyMovement();
+ApplyMovement();
 
 sprite_index = Sprite[location, action];	// Update the sprite after all calculations
