@@ -71,7 +71,6 @@
 		if x_input > 0 && abs(x_input) > abs(y_input)
 		{
 			attack_dir = 1;	//right
-			
 		}
 		else if x_input < 0 && abs(x_input) > abs(y_input)
 		{

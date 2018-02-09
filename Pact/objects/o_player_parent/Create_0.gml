@@ -1,27 +1,32 @@
-dir = 1;
+// Controller ID
+ID = 0;
 
-velocity = [0,0];
-fall_speed = 8;
-fast_fall_speed = 25;
-max_speed = 8;
-acceleration = 1;
-spd = 3;
+// BASIC MOVEMENT VARIABLES
+dir = 1;				// Direction player is facing
+velocity = [0,0];		// Vector of movement for the current frame
+fall_speed = 8;			// Standard speed downward
+fast_fall_speed = 25;	// Speed downward when holding down on the left stick
+max_speed = 8;			// Clamped maximum horizontal speed
+acceleration = 1;		// Change in speed from moving
+jump_height = -10;		// Vertical speed of jumping
+
+// SPECIAL GAME VARIABLES
 hp = 100;
-soulFrags = 0;
-max_soulFrags = 3;
 max_jumps = 3;
 jumps = max_jumps;
-jump_height = -10;
+soulFrags = 0;
+max_soulFrags = 3;
 
-// Dodge variables
+
+// DODGE VARIABLES
 max_dodges = 1;
 dodges = max_dodges;
 dodge_timer = 20;
 dodge_speed = 10;
 alarm[0] = 0;
 
-location = GROUND;
-action = IDLE;
+
+
 sequenceCount = 0;	//Combo counter
 
 // Attacking
@@ -40,7 +45,10 @@ heal_timer = 60;
 heal_amount = 15;
 
 
-// 2D Sprite array
+// 2D Sprite array --- Sprites are determined by the player's locations and actions
+location = GROUND;
+action = IDLE;
+
 Sprite[GROUND, IDLE]	= s_player_idle_test;
 Sprite[GROUND, MOVE]	= s_player_run;
 Sprite[GROUND, ATTACK]	= s_player_combo0;

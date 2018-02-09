@@ -15,10 +15,10 @@ switch(state)
 		// Determine if we are in the air or not
 		if location == AIR
 		{
-			CreateHitBox(x + attack_offset * dir, y, 1, 1);
+			CreateHitBox(x + attack_offset * dir, y, 1, 1, ID);
 		}
 		else
 		{
-			CreateHitBox(x + attack_offset * dir, y, 1, 1);
+			CreateHitBox(x + attack_offset * dir, y, 1, 1, ID);
 		}
 }

@@ -14,21 +14,21 @@ y_input = input_down - input_up;
 
 
 // Check if controller is connected and overwrite inputs if it is
-if gamepad_is_connected(0)
+if gamepad_is_connected(ID)
 {
 	// use controller for input
 	// SET DEADZONE
-	gamepad_set_axis_deadzone(0, .2);
+	gamepad_set_axis_deadzone(ID, .2);
 	
 	// Check left stick axes for direction
-	var haxis = gamepad_axis_value(0, gp_axislh);
-	var vaxis = gamepad_axis_value(0, gp_axislv);
+	var haxis = gamepad_axis_value(ID, gp_axislh);
+	var vaxis = gamepad_axis_value(ID, gp_axislv);
 	
-	input_attack = gamepad_button_check_pressed(0, gp_face3);
-	input_jump	 = gamepad_button_check_pressed(0, gp_face1);
-	input_dodge	 = gamepad_button_check_pressed(0, gp_shoulderlb);
-	input_dodge	 = gamepad_button_check_pressed(0, gp_shoulderrb);
-	input_heal	 = gamepad_button_check(0, gp_face2);
+	input_attack = gamepad_button_check_pressed(ID, gp_face3);
+	input_jump	 = gamepad_button_check_pressed(ID, gp_face1);
+	input_dodge	 = gamepad_button_check_pressed(ID, gp_shoulderlb);
+	input_dodge	 = gamepad_button_check_pressed(ID, gp_shoulderrb);
+	input_heal	 = gamepad_button_check(ID, gp_face2);
 	
 	x_input = haxis;
 	y_input = vaxis;

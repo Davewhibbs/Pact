@@ -3,3 +3,4 @@
 setup = 0;
 damage = 0;
 lifetime = 0;
+ID = 0;
