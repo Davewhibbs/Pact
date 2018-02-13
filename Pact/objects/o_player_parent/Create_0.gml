@@ -35,9 +35,9 @@ attack_timer = 10;
 combo_timer = 30;
 alarm[1] = 0;
 alarm[2] = 0;
-combo[0] = s_player_combo0;
-combo[1] = s_player_combo1;
-combo[2] = s_player_combo2;
+combo[0] = s_werewolf_attack;
+combo[1] = s_werewolf_attack;
+combo[2] = s_werewolf_attack;
 
 // Healing
 alarm[3] = 0;
@@ -45,23 +45,23 @@ heal_timer = 60;
 heal_amount = 15;
 
 
+// Dying/Respawning
+
 // 2D Sprite array --- Sprites are determined by the player's locations and actions
 location = GROUND;
 action = IDLE;
 
-Sprite[GROUND, IDLE]	= s_player_idle_test;
-Sprite[GROUND, MOVE]	= s_player_run;
-Sprite[GROUND, ATTACK]	= s_player_combo0;
-Sprite[AIR, ATTACK]	= s_player_combo0;
+Sprite[GROUND, IDLE]	= s_cultist_idle;
+Sprite[GROUND, MOVE]	= s_cultist_run;
+Sprite[GROUND, ATTACK]	= s_werewolf_attack;
+Sprite[AIR, ATTACK]		= s_werewolf_attack;
 Sprite[GROUND, JUMP]	= s_player_jump;
 Sprite[AIR,	JUMP]		= s_player_jump;
 Sprite[AIR, FALL]		= s_player_fall;
 Sprite[GROUND, DODGE]	= s_player_dodge;
-Sprite[AIR, DODGE]	= s_player_dodge;
-Sprite[GROUND, HEAL] =	s_player_heal;
+Sprite[AIR, DODGE]		= s_player_dodge;
+Sprite[GROUND, HEAL]	= s_player_heal;
 
-
-// Sprites used
 
 
 // State machine

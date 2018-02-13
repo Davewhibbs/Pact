@@ -64,6 +64,7 @@
 	else if state == states.attack{
 		//------------FUNCTIONALITY
 		//Movement
+		GetInput();
 		NeutralMovement();
 		
 #region		// Determine direction of attack

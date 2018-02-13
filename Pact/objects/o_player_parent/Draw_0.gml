@@ -7,25 +7,25 @@ switch (soulFrags) {
 	
 	case 1: 
 		// First soul frag appears above head
-		draw_sprite(s_soul, image_index, x, y-25);
+		draw_sprite(s_soul, image_index, x, y-64);
 		break;
 		
 	case 2:
 		// First soul frag appears above head
-		draw_sprite(s_soul, image_index, x, y-25);
+		draw_sprite(s_soul, image_index, x, y-64);
 		
 		// Second soul frag appears to left
-		draw_sprite(s_soul, image_index, x-25, y);
+		draw_sprite(s_soul, image_index, x-25, y - 32);
 		break;
 		
 	case 3:
 		// First soul frag appears above head
-		draw_sprite(s_soul, image_index, x, y-25);
+		draw_sprite(s_soul, image_index, x, y-64);
 		
 		// Second soul frag appears to left
-		draw_sprite(s_soul, image_index, x-25, y);
+		draw_sprite(s_soul, image_index, x-25, y-32);
 		
 		// Third soul frag appears to left
-		draw_sprite(s_soul, image_index, x+25, y);
+		draw_sprite(s_soul, image_index, x+25, y-32);
 }
 #endregion

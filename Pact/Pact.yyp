@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01520f56-2a50-4667-a255-8379102e656a",
+            "Value": {
+                "id": "caa12f43-a56c-48fd-999e-5f02d52a6c8a",
+                "resourcePath": "objects\\spawn_0\\spawn_0.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "06c2d82d-b809-402f-8277-a8afb3f57fd1",
             "Value": {
                 "id": "c96a73b9-d48e-400b-99b4-d07f601ca50a",
@@ -52,6 +60,14 @@
                 "id": "61f57c4e-2bcb-436a-824c-8e1033cdc2b3",
                 "resourcePath": "scripts\\Jump\\Jump.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1665c971-a6c1-4ed2-a783-d4cad5acc2dc",
+            "Value": {
+                "id": "98614aa9-530e-462d-b3ba-da0276e5f8ba",
+                "resourcePath": "sprites\\s_werewolf_idle\\s_werewolf_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -119,18 +135,18 @@
             }
         },
         {
+            "Key": "45e8697e-72b6-4e38-a6e3-7e1874654dd4",
+            "Value": {
+                "id": "ec99ab3a-2d0d-45a9-a25a-eb6f2af2cf0a",
+                "resourcePath": "sprites\\s_cultist_run\\s_cultist_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4a650455-5ce4-414c-8254-ccf183166464",
             "Value": {
                 "id": "b234c51a-ed33-4294-adbc-cb00029ce792",
                 "resourcePath": "objects\\o_player_parent\\o_player_parent.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "4ee8a922-7a2c-424a-8ad0-9c140d8b4df1",
-            "Value": {
-                "id": "e7dfc936-77ef-4a78-9442-a4b797eeb853",
-                "resourcePath": "objects\\o_player_duplicate\\o_player_duplicate.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -199,10 +215,26 @@
             }
         },
         {
+            "Key": "6f9b9223-15bc-4775-8745-cc797e134248",
+            "Value": {
+                "id": "157a7f7a-e0d0-4ae6-9cfb-81cd6a9a5e5d",
+                "resourcePath": "objects\\spawn_3\\spawn_3.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7111924e-59e9-400c-a655-f782509a6b10",
+            "Value": {
+                "id": "c9b9bd81-e050-4254-bcff-136bed20b028",
+                "resourcePath": "objects\\spawn_2\\spawn_2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "729e4e01-1310-4d81-b5f0-4672b39646c3",
             "Value": {
                 "id": "f43f9037-edfb-47ea-8f84-3cce06df1954",
-                "resourcePath": "sprites\\s_player_idle_test\\s_player_idle_test.yy",
+                "resourcePath": "sprites\\s_cultist_idle\\s_cultist_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -268,6 +300,14 @@
                 "id": "183a3e12-3f0d-4c74-aad8-71ed8e2b5d32",
                 "resourcePath": "sprites\\s_player_idle\\s_player_idle.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9547ba03-6aa9-4091-94d8-cd88bacef5a5",
+            "Value": {
+                "id": "ee1ad173-b4e1-432d-97eb-9db40e9839f7",
+                "resourcePath": "views\\9547ba03-6aa9-4091-94d8-cd88bacef5a5.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -391,6 +431,14 @@
             }
         },
         {
+            "Key": "beff62c3-d1d5-4c40-b6dd-7c0b3c976835",
+            "Value": {
+                "id": "54bd2155-b306-427b-b906-083328d2631e",
+                "resourcePath": "views\\beff62c3-d1d5-4c40-b6dd-7c0b3c976835.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c4f8aac1-a1d9-416a-8f45-1fd15c56244d",
             "Value": {
                 "id": "f4c6316a-4c50-46f0-aefa-6f6a1a581ede",
@@ -428,6 +476,22 @@
                 "id": "8e5a3001-43a3-453f-ab43-c670ab17973f",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "d08226c3-3cb8-4937-8744-80a2ff325c78",
+            "Value": {
+                "id": "51ac6883-90de-4679-845e-a4bbefbecba7",
+                "resourcePath": "objects\\spawn_1\\spawn_1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "da7dc0b5-11e3-4bd8-a43b-e9ef323baa9e",
+            "Value": {
+                "id": "86887754-d520-4f37-a912-1bfa5ebab8bf",
+                "resourcePath": "sprites\\s_werewolf_run\\s_werewolf_run.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -500,6 +564,14 @@
                 "id": "6e9913d8-3ec6-4b22-919d-02241fa32d1c",
                 "resourcePath": "scripts\\ApplyMovement\\ApplyMovement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ff72a3e7-828c-4701-9ed7-11e3456da9d9",
+            "Value": {
+                "id": "be44e159-30ef-4f83-87ef-74a1ca45a647",
+                "resourcePath": "sprites\\s_werewolf_attack\\s_werewolf_attack.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
