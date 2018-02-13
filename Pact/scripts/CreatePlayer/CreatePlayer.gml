@@ -4,6 +4,7 @@
 // Create a player with a given ID
 var player = instance_create_layer(0, 0, "Instances", o_player_parent);
 player.ID = argument0;
+global.player_array[argument0] = player; // add player to the player array
 
 // Move player to spawn point
 switch player.ID{
