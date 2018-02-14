@@ -1,6 +1,9 @@
 //--------DETERMINE WHICH ATTACK TO USE BASED ON DIRECTION AND LOCATION
 // perform the function of the attack at the givin location
 
+NeutralGround();
+
+/*
 #region Ground Attacks
 if (location == GROUND) {
 	switch (attack_dir) {

@@ -1,8 +1,13 @@
+// Set damage of attack and timer for hitbox creation
+
+// Start countdown to hitbox creation
+alarm[4] = hitbox_creation_timer; // for now all attacks create hitboxes at the same time
+
 #region Ground Attacks
 if (location == GROUND) {
 	switch (attack_dir) {
 		case NODIR:
-			
+				
 			break;
 			
 		case RIGHT:
@@ -49,3 +54,4 @@ else if (location == AIR) {
 	}
 }
 #endregion
+

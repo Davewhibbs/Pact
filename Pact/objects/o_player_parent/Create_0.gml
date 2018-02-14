@@ -29,8 +29,6 @@ alarm[0] = 0;
 // ATTACKING VARIABLES
 sequenceCount = 0;	//Combo counter
 attacked = false;
-attack_xOffset = 32;
-attack_yOffset = 32;
 attack_timer = 10;
 combo_timer = 30;
 hitbox_creation_timer = .1 * room_speed; // half a second
@@ -41,6 +39,51 @@ alarm[2] = 0;
 combo[0] = s_werewolf_attack;
 combo[1] = s_werewolf_attack;
 combo[2] = s_werewolf_attack;
+
+#region Attack hitboxes offsets arrays
+attack_xOffset = [0, 0]; // Holds info on the offsets of each attack
+attack_yOffset = [0, 0]; // Holds info on the offsets of each attack
+
+// NeutralGround
+attack_xOffset[GROUND, NODIR] = 32;	
+attack_yOffset[GROUND, NODIR] = 32;
+
+// LeftRightGround
+attack_xOffset[GROUND, LEFT] = 32;	
+attack_yOffset[GROUND, LEFT] = 32;
+attack_xOffset[GROUND, RIGHT] = 32;	
+attack_yOffset[GROUND, RIGHT] = 32;
+
+// UpGround
+attack_xOffset[GROUND, UP] = 0;	
+attack_yOffset[GROUND, UP] = 64;
+
+// DownGround
+attack_xOffset[GROUND, DOWN] = 0;	
+attack_yOffset[GROUND, DOWN] = 0;
+
+// NeutralAir
+attack_xOffset[AIR, NODIR] = 32;	
+attack_yOffset[AIR, NODIR] = 32;
+
+// LeftRightAir
+attack_xOffset[AIR, LEFT] = 32;	
+attack_yOffset[AIR, LEFT] = 32;
+attack_xOffset[AIR, RIGHT] = 32;	
+attack_yOffset[AIR, RIGHT] = 32;
+
+// UpAir
+attack_xOffset[AIR, UP] = 0;	
+attack_yOffset[AIR, UP] = 64;
+
+// DownAir
+attack_xOffset[AIR, DOWN] = 0;	
+attack_yOffset[AIR, DOWN] = -32;
+#endregion
+
+
+
+
 
 // HURT/STUN VARIABLES
 stun_timer = room_speed * .2;

@@ -56,8 +56,7 @@
 				// Set attack variables ONCE based on the specific attack
 				SetAttackVariables();
 				
-				// Start countdown to hitbox creation
-				alarm[4] = hitbox_creation_timer;
+				
 				
 				state = states.attack;
 			}
