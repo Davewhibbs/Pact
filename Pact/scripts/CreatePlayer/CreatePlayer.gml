@@ -2,6 +2,7 @@
 /// @param ID
 
 // Create a player with a given ID
+show_debug_message("Created player with ID " + string(argument0));
 var player = instance_create_layer(0, 0, "Instances", o_player_parent);
 player.ID = argument0;
 global.player_array[argument0] = player; // add player to the player array

@@ -9,19 +9,19 @@ if (location == GROUND) {
 			break;
 			
 		case RIGHT:
-			
+			LeftRightGround();
 			break;
 			
 		case LEFT:
-			
+			LeftRightGround();
 			break;
 			
 		case UP:
-			
+			UpGround();
 			break;
 			
 		case DOWN:
-			
+			DownGround();
 			break;	
 	}
 }
@@ -31,23 +31,23 @@ if (location == GROUND) {
 else if (location == AIR) {
 	switch (attack_dir) {
 		case NODIR:
-		
+			NeutralAir();
 			break;
 			
 		case RIGHT:
-		
+			LeftRightAir();
 			break;
 			
 		case LEFT:
-		
+			LeftRightAir();
 			break;
 			
 		case UP:
-		
+			UpAir();
 			break;
 			
 		case DOWN:
-		
+			DownAir();
 			break;	
 	}
 }

@@ -26,10 +26,8 @@ dodge_speed = 10;
 alarm[0] = 0;
 
 
-
-sequenceCount = 0;	//Combo counter
-
 // ATTACKING VARIABLES
+sequenceCount = 0;	//Combo counter
 attacked = false;
 attack_xOffset = 32;
 attack_yOffset = 32;
@@ -43,12 +41,10 @@ alarm[2] = 0;
 combo[0] = s_werewolf_attack;
 combo[1] = s_werewolf_attack;
 combo[2] = s_werewolf_attack;
-// Attack Arrays
-attacks = [0,0];						// 2 locations, 5 directions
-attacks[GROUND, NODIR] = NeutralGround; 
 
-
-//spAttacks= [2,5];
+// HURT/STUN VARIABLES
+stun_timer = room_speed * .2;
+alarm[5] = 0;
 
 
 // HEALING VARIABLES
@@ -73,6 +69,8 @@ Sprite[AIR, FALL]		= s_player_fall;
 Sprite[GROUND, DODGE]	= s_player_dodge;
 Sprite[AIR, DODGE]		= s_player_dodge;
 Sprite[GROUND, HEAL]	= s_player_heal;
+Sprite[GROUND, HURT]	= s_cultist_hurt;
+Sprite[AIR, HURT]		= s_cultist_hurt;
 
 
 

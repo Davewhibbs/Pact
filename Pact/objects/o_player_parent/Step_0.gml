@@ -25,16 +25,7 @@
 			}
 		}
 		
-		// Hurt
-		if place_meeting(x, y, o_hitbox)
-		{
-			// only get hurt if the hitbox does not belong to your own attacks
-			if (other.ID != ID)
-			{
-				image_index = 0;			// Reset animation
-				state = states.hurt;
-			}
-		}
+		// Hurt - handled in collision event
 		
 		// Transform
 		if soulFrags == max_soulFrags {
@@ -92,7 +83,7 @@
 		
 		
 		
-		//Sprite[@ GROUND, ATTACK] = combo[sequenceCount];
+		
 		
 		//------------STATE SWITCHES
 		// Neutral
@@ -153,10 +144,10 @@
 #region Hurt
 	else if state == states.hurt{
 		//------------FUNCTIONALITY
-		show_debug_message("hit");
+		show_debug_message(string(ID) + ": hit");
 		
 		//------------STATE SWITCHES
-		state = states.neutral;
+		state = states.stun;
 		
 		//------------SPRITE
 		
@@ -168,10 +159,13 @@
 #region Stun
 	else if state == states.stun{
 		//------------FUNCTIONALITY
-		
+		// determine
 		
 		//------------STATE SWITCHES
-		
+		// Return to neutral after stun timer
+		if (alarm[5] <= 0){
+			state = states.neutral;
+		}
 		
 		//------------SPRITE
 		
