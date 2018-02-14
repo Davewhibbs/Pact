@@ -26,6 +26,15 @@
 		}
 		
 		// Hurt
+		if place_meeting(x, y, o_hitbox)
+		{
+			// only get hurt if the hitbox does not belong to your own attacks
+			if (other.ID != ID)
+			{
+				image_index = 0;			// Reset animation
+				state = states.hurt;
+			}
+		}
 		
 		// Transform
 		if soulFrags == max_soulFrags {
@@ -50,6 +59,14 @@
 			if alarm[1] <= 0{
 				image_index = 0;
 				alarm[1] = attack_timer;
+				// Find Attack direction
+				DetermineAttackDir();	
+				
+				// Set attack variables ONCE based on the specific attack
+				SetAttackVariables();
+				
+				// Start countdown to hitbox creation
+				alarm[4] = hitbox_creation_timer;
 				
 				state = states.attack;
 			}
@@ -67,37 +84,21 @@
 		GetInput();
 		NeutralMovement();
 		
-#region		// Determine direction of attack
-		var attack_dir = 0;
-		if x_input > 0 && abs(x_input) > abs(y_input)
-		{
-			attack_dir = 1;	//right
-		}
-		else if x_input < 0 && abs(x_input) > abs(y_input)
-		{
-			attack_dir = 2; //left
-		}
-		else if y_input < 0 && abs(y_input) > abs(x_input)
-		{
-			attack_dir = 3; //UP
-		}
-		else if y_input > 0 && abs(y_input) > abs(x_input)
-		{
-			attack_dir = 4; //down
-		}
-		else if x_input == 0 && y_input == 0
-		{
-			attack_dir = 0;
-		}
-#endregion		
+		// Execute Attack based on the attack_dir
+		if (attacked == false){
+			ExecuteAttack();
+		}	
+	
 		
 		
 		
-		
-		Sprite[@ GROUND, ATTACK] = combo[sequenceCount];
+		//Sprite[@ GROUND, ATTACK] = combo[sequenceCount];
 		
 		//------------STATE SWITCHES
+		// Neutral
 		
+		
+		// Hurt
 		
 		//------------SPRITE
 		action = ATTACK;
@@ -152,10 +153,10 @@
 #region Hurt
 	else if state == states.hurt{
 		//------------FUNCTIONALITY
-		
+		show_debug_message("hit");
 		
 		//------------STATE SWITCHES
-		
+		state = states.neutral;
 		
 		//------------SPRITE
 		

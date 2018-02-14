@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "3fbba23c-d2fa-4417-887f-8cdd99104b31",
+            "Value": {
+                "id": "d5562b56-cd83-4be3-a676-e1592e46789b",
+                "resourcePath": "views\\3fbba23c-d2fa-4417-887f-8cdd99104b31.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "45e8697e-72b6-4e38-a6e3-7e1874654dd4",
             "Value": {
                 "id": "ec99ab3a-2d0d-45a9-a25a-eb6f2af2cf0a",
@@ -143,11 +151,27 @@
             }
         },
         {
+            "Key": "49008968-14f6-41a9-a03c-647bd2ab86e9",
+            "Value": {
+                "id": "ca78383f-ed0a-4191-bb8b-f58802d80dd2",
+                "resourcePath": "scripts\\ExecuteAttack\\ExecuteAttack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4a650455-5ce4-414c-8254-ccf183166464",
             "Value": {
                 "id": "b234c51a-ed33-4294-adbc-cb00029ce792",
                 "resourcePath": "objects\\o_player_parent\\o_player_parent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "50623460-dd2b-44a6-9eae-ccf903ff9de4",
+            "Value": {
+                "id": "57291688-a91e-470a-81b8-d441550e325c",
+                "resourcePath": "scripts\\NeutralGround\\NeutralGround.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -255,6 +279,14 @@
             }
         },
         {
+            "Key": "7b3ccd07-6add-482f-ba8d-61d919f26367",
+            "Value": {
+                "id": "8b7a2b8f-c299-4f95-83b7-0b0ce0b0aafc",
+                "resourcePath": "views\\7b3ccd07-6add-482f-ba8d-61d919f26367.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7f5d3cbf-7731-4fd8-94e0-f42df22fc7e2",
             "Value": {
                 "id": "f5ffaa96-4eb0-41d8-ad0b-5ad4e1784d98",
@@ -267,6 +299,14 @@
             "Value": {
                 "id": "efac3191-dee4-4651-8123-050c830b84a6",
                 "resourcePath": "scripts\\Respawn\\Respawn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8ba15540-758f-4992-85c2-0f2704934efc",
+            "Value": {
+                "id": "ad8d046b-41aa-4b7f-87d4-b43e835ea569",
+                "resourcePath": "scripts\\SetAttackVariables\\SetAttackVariables.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -487,6 +527,14 @@
             }
         },
         {
+            "Key": "d0c64bfa-2c29-49a8-8a5d-97959a09477d",
+            "Value": {
+                "id": "fec1794a-166e-431a-bd6f-a6b1c802e52a",
+                "resourcePath": "scripts\\DetermineAttackDir\\DetermineAttackDir.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "da7dc0b5-11e3-4bd8-a43b-e9ef323baa9e",
             "Value": {
                 "id": "86887754-d520-4f37-a912-1bfa5ebab8bf",
@@ -585,6 +633,10 @@
         "23c49602-7a28-441d-a934-e2b65e8f31c6",
         "779407f4-8b25-49cd-9a51-f15f93257815",
         "885e445b-508a-4184-9d8e-f61aab303f47",
+        "d0c64bfa-2c29-49a8-8a5d-97959a09477d",
+        "8ba15540-758f-4992-85c2-0f2704934efc",
+        "49008968-14f6-41a9-a03c-647bd2ab86e9",
+        "50623460-dd2b-44a6-9eae-ccf903ff9de4",
         "bc002d71-4b7a-437c-b432-c28f54b397e6",
         "bab6c555-5f74-4867-b511-d21074b0e174",
         "3b1201b1-c6a4-4a21-94c3-9f124105698f"

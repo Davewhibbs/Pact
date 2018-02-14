@@ -3,6 +3,7 @@
 switch(state)
 {	
 	case states.attack:
+		// At the end of an attack animation, if it is a combo attack, increment the combo sequence
 		alarm[2] = combo_timer;
 		sequenceCount++;
 		if (sequenceCount >= 3)
@@ -10,15 +11,7 @@ switch(state)
 			sequenceCount = 0;	// reset combo
 		}
 		
+		// Return to neutral at the end of the animation
+		attacked = false;
 		state = states.neutral;
-		
-		// Determine if we are in the air or not
-		if location == AIR
-		{
-			CreateHitBox(x + attack_offset * dir, y, 1, 1, ID);
-		}
-		else
-		{
-			CreateHitBox(x + attack_offset * dir, y, 1, 1, ID);
-		}
 }
