@@ -12,7 +12,8 @@
         "578aeb76-b0bf-4bab-b81c-c0b76152326f",
         "59ebfcfc-566e-4022-88a0-fabdc9ef0de0",
         "c6b51287-804d-4b20-b8f2-8479f1bd0aec",
-        "26bdddcc-3638-4dc9-9d7d-56f5071024e1"
+        "26bdddcc-3638-4dc9-9d7d-56f5071024e1",
+        "d8115ea4-ac39-47b7-a137-e5e8ff6adc84"
     ],
     "filterType": "GMSprite",
     "folderName": "Proto",

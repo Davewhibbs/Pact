@@ -106,14 +106,14 @@ Sprite[GROUND, IDLE]	= s_cultist_idle;
 Sprite[GROUND, MOVE]	= s_cultist_run;
 Sprite[GROUND, ATTACK]	= s_werewolf_attack;
 Sprite[AIR, ATTACK]		= s_werewolf_attack;
-Sprite[GROUND, JUMP]	= s_player_jump;
-Sprite[AIR,	JUMP]		= s_player_jump;
-Sprite[AIR, FALL]		= s_player_fall;
+Sprite[GROUND, JUMP]	= s_cultist_jump;
+Sprite[AIR,	JUMP]		= s_cultist_jump;
+Sprite[AIR, FALL]		= s_cultist_jump;
 Sprite[GROUND, DODGE]	= s_player_dodge;
 Sprite[AIR, DODGE]		= s_player_dodge;
 Sprite[GROUND, HEAL]	= s_player_heal;
-Sprite[GROUND, HURT]	= s_cultist_hurt;
-Sprite[AIR, HURT]		= s_cultist_hurt;
+Sprite[GROUND, HURT]	= s_player_hurt;
+Sprite[AIR, HURT]		= s_player_hurt;
 
 
 
