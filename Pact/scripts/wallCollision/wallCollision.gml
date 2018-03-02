@@ -9,7 +9,7 @@ if(place_meeting(x + velocity[h], y, o_wall)){
 			break;
 		}
 	}
-	velocity[h] = 0;
+	velocity[@ h] = 0;
 }
 
 // Vertical
@@ -21,5 +21,5 @@ if(place_meeting(x, y + velocity[v], o_wall)){
 			break;
 		}
 	}
-	velocity[v] = 0;
+	velocity[@ v] = 0;
 }

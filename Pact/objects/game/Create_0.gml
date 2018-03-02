@@ -23,9 +23,10 @@ for (var i = 0; i < 4; i++) {
 // create array of players
 global.player_array = [playerCount];
 
-//----------CREATE PLAYERS AT SPAWN LOCATIONS
+//----------CREATE PLAYERS AND HEALTHBARS AT SPAWN LOCATIONS
 for (var i = 0; i < playerCount; i++) {
 	CreatePlayer(i);
+	CreateHealthBar(global.player_array[i]);
 }
 
 //----------CREATE CAMERA (so it doesn't run any code before this)

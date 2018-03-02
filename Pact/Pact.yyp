@@ -223,6 +223,14 @@
             }
         },
         {
+            "Key": "47e79064-91a8-46b1-bc6e-fb8b3f6d8451",
+            "Value": {
+                "id": "efa51b61-d8d7-49c0-8ac5-78efdd3d9694",
+                "resourcePath": "scripts\\CreateHealthBar\\CreateHealthBar.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "49008968-14f6-41a9-a03c-647bd2ab86e9",
             "Value": {
                 "id": "ca78383f-ed0a-4191-bb8b-f58802d80dd2",
@@ -324,6 +332,14 @@
                 "id": "6c42fcab-149a-4fc8-8cf9-568ce490601c",
                 "resourcePath": "objects\\o_hitbox\\o_hitbox.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "68656494-76ee-42cc-b780-50752200d654",
+            "Value": {
+                "id": "a34e090c-cb6e-4acc-b177-2d6976acf039",
+                "resourcePath": "sprites\\s_healthBar\\s_healthBar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -500,6 +516,22 @@
                 "id": "69d2cc09-2d96-48c6-a63a-9c8a3a237e2d",
                 "resourcePath": "objects\\camera\\camera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a17d578d-3dbb-4edf-beb5-8ec5d67bf1ff",
+            "Value": {
+                "id": "3cfd0afb-e631-46cf-bfe9-dbb2e2c80163",
+                "resourcePath": "objects\\o_healthBar\\o_healthBar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a2154972-9e2a-414c-a845-95697e2c2812",
+            "Value": {
+                "id": "a84ede52-c2a8-4942-aec0-38478e17ee0e",
+                "resourcePath": "scripts\\HurtMovement\\HurtMovement.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -775,6 +807,14 @@
             }
         },
         {
+            "Key": "ff5f783e-d3da-4214-94e7-e750eebeb7e8",
+            "Value": {
+                "id": "ee0845e1-a5d6-4c06-a180-40d184bfabcd",
+                "resourcePath": "sprites\\s_cultist_hurt\\s_cultist_hurt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ff72a3e7-828c-4701-9ed7-11e3456da9d9",
             "Value": {
                 "id": "be44e159-30ef-4f83-87ef-74a1ca45a647",
@@ -786,6 +826,7 @@
     "script_order": [
         "907cb340-c24f-4d90-9fd6-46ba8502a561",
         "a8d7725a-cc3d-483b-b233-ac02532b1e41",
+        "a2154972-9e2a-414c-a845-95697e2c2812",
         "78c12067-4c69-4b31-b090-b09f102a4413",
         "64d33ae2-6b4a-4d4e-b789-e990268f2a33",
         "1638ac2a-4fb0-4c7f-887c-fc86bba8a7fc",
@@ -812,6 +853,7 @@
         "116b329c-4dcb-4d6b-af88-52717aaa552c",
         "5c0b00b5-5e82-448a-9d84-e9872fbe83e9",
         "2cd640ea-0217-4187-b719-f61d5b361a92",
+        "47e79064-91a8-46b1-bc6e-fb8b3f6d8451",
         "bc002d71-4b7a-437c-b432-c28f54b397e6",
         "bab6c555-5f74-4867-b511-d21074b0e174",
         "3b1201b1-c6a4-4a21-94c3-9f124105698f"

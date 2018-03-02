@@ -145,20 +145,8 @@
 		//------------FUNCTIONALITY
 		show_debug_message(string(ID) + ": hit");
 		
-		//------------STATE SWITCHES
-		state = states.stun;
-		
-		//------------SPRITE
-		
-	
-	
-	}
-#endregion
-
-#region Stun
-	else if state == states.stun{
-		//------------FUNCTIONALITY
-		// determine
+		// Move with no control
+		HurtMovement();
 		
 		//------------STATE SWITCHES
 		// Return to neutral after stun timer
@@ -191,10 +179,13 @@
 #region Dying
 	else if state == states.death{
 		//------------FUNCTIONALITY
+		// No control over movement
+		HurtMovement();
+		
 		
 		
 		//------------STATE SWITCHES
-		
+		// Respawn
 		
 		//------------SPRITE
 		
@@ -215,6 +206,11 @@
 		
 	}
 #endregion
+
+//------------NEVER GO ABOVE MAX HEALTH
+if(hp > max_hp){
+	hp = max_hp;
+}	
 
 //------------WALL COLLISION
 WallCollision();

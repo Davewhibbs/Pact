@@ -11,7 +11,9 @@ acceleration = 1;		// Change in speed from moving
 jump_height = -10;		// Vertical speed of jumping
 
 // SPECIAL GAME VARIABLES
-hp = 100;
+max_hp = 100;
+hp = max_hp;
+draw_hp = max_hp;
 max_jumps = 3;
 jumps = max_jumps;
 soulFrags = 0;
@@ -112,8 +114,8 @@ Sprite[AIR, FALL]		= s_cultist_jump;
 Sprite[GROUND, DODGE]	= s_player_dodge;
 Sprite[AIR, DODGE]		= s_player_dodge;
 Sprite[GROUND, HEAL]	= s_player_heal;
-Sprite[GROUND, HURT]	= s_player_hurt;
-Sprite[AIR, HURT]		= s_player_hurt;
+Sprite[GROUND, HURT]	= s_cultist_hurt;
+Sprite[AIR, HURT]		= s_cultist_hurt;
 
 
 

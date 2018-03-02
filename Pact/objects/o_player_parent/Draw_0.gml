@@ -29,3 +29,7 @@ switch (soulFrags) {
 		draw_sprite(s_soul, image_index, x+25, y-32);
 }
 #endregion
+
+
+// Debug bounding box
+draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_yellow, c_yellow, c_yellow, c_yellow, true);
