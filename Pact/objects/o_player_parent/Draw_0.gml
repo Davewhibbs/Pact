@@ -7,29 +7,29 @@ switch (soulFrags) {
 	
 	case 1: 
 		// First soul frag appears above head
-		draw_sprite(s_soul, image_index, x, y-64);
+		draw_sprite(s_soulFragment, image_index, x, y-75);
 		break;
 		
 	case 2:
 		// First soul frag appears above head
-		draw_sprite(s_soul, image_index, x, y-64);
+		draw_sprite(s_soulFragment, image_index, x, y-75);
 		
 		// Second soul frag appears to left
-		draw_sprite(s_soul, image_index, x-25, y - 32);
+		draw_sprite(s_soulFragment, image_index, x-15, y - 75);
 		break;
 		
 	case 3:
 		// First soul frag appears above head
-		draw_sprite(s_soul, image_index, x, y-64);
+		draw_sprite(s_soulFragment, image_index, x, y-75);
 		
 		// Second soul frag appears to left
-		draw_sprite(s_soul, image_index, x-25, y-32);
+		draw_sprite(s_soulFragment, image_index, x-15, y-75);
 		
 		// Third soul frag appears to left
-		draw_sprite(s_soul, image_index, x+25, y-32);
+		draw_sprite(s_soulFragment, image_index, x+15, y-75);
 }
 #endregion
 
 
 // Debug bounding box
-draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_yellow, c_yellow, c_yellow, c_yellow, true);
+//draw_rectangle_color(bbox_left, bbox_top, bbox_right, bbox_bottom, c_yellow, c_yellow, c_yellow, c_yellow, true);

@@ -47,8 +47,8 @@ attack_xOffset = [0, 0]; // Holds info on the offsets of each attack
 attack_yOffset = [0, 0]; // Holds info on the offsets of each attack
 
 // NeutralGround
-attack_xOffset[GROUND, NODIR] = 32;	
-attack_yOffset[GROUND, NODIR] = 32;
+attack_xOffset[GROUND, NODIR] = 20;	
+attack_yOffset[GROUND, NODIR] = 20;
 
 // LeftRightGround
 attack_xOffset[GROUND, LEFT] = 32;	
@@ -106,14 +106,14 @@ action = IDLE;
 
 Sprite[GROUND, IDLE]	= s_cultist_idle;
 Sprite[GROUND, MOVE]	= s_cultist_run;
-Sprite[GROUND, ATTACK]	= s_werewolf_attack;
-Sprite[AIR, ATTACK]		= s_werewolf_attack;
+Sprite[GROUND, ATTACK]	= s_cultist_attack;
+Sprite[AIR, ATTACK]		= s_cultist_attack;
 Sprite[GROUND, JUMP]	= s_cultist_jump;
 Sprite[AIR,	JUMP]		= s_cultist_jump;
 Sprite[AIR, FALL]		= s_cultist_jump;
-Sprite[GROUND, DODGE]	= s_player_dodge;
-Sprite[AIR, DODGE]		= s_player_dodge;
-Sprite[GROUND, HEAL]	= s_player_heal;
+Sprite[GROUND, DODGE]	= s_cultist_dodge;
+Sprite[AIR, DODGE]		= s_cultist_dodge;
+Sprite[GROUND, HEAL]	= s_cultist_heal;
 Sprite[GROUND, HURT]	= s_cultist_hurt;
 Sprite[AIR, HURT]		= s_cultist_hurt;
 

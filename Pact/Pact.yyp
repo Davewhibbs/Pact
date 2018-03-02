@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "002e9db9-23c2-48c2-a1e7-f003aca61af5",
+            "Value": {
+                "id": "bd1c0dee-a970-40c0-8ab7-cc8a5e713c30",
+                "resourcePath": "sprites\\s_cultist_transform\\s_cultist_transform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "01520f56-2a50-4667-a255-8379102e656a",
             "Value": {
                 "id": "caa12f43-a56c-48fd-999e-5f02d52a6c8a",
@@ -135,6 +143,14 @@
             }
         },
         {
+            "Key": "32945964-0da8-49e4-a53c-05bd068125ac",
+            "Value": {
+                "id": "5537a4f6-df1e-4f23-a56d-b42602f5887f",
+                "resourcePath": "sprites\\s_cultist_attack\\s_cultist_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3588e74d-ddb9-43c7-94ce-3bff7d55754a",
             "Value": {
                 "id": "41c8c3a8-9f0e-4dd7-a511-2f58757f01b3",
@@ -180,14 +196,6 @@
                 "id": "b39a92cd-e671-4cf7-8c5d-394a1b8df376",
                 "resourcePath": "views\\3c481b57-c51f-4da8-8013-f392f5b30750.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "3d7912d9-bea9-404a-8009-63681fda87c1",
-            "Value": {
-                "id": "160723aa-fb6a-4ee1-938f-8edd95f4a320",
-                "resourcePath": "sprites\\s_soul\\s_soul.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -275,6 +283,14 @@
             "Value": {
                 "id": "401ea7c3-220d-4f36-b520-6d7c1b7f893e",
                 "resourcePath": "sprites\\s_player_fall\\s_player_fall.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5a6f1cdb-4105-4178-bdad-84e9861feed1",
+            "Value": {
+                "id": "938beebd-5550-4657-9678-a46ac065aa3a",
+                "resourcePath": "sprites\\s_background_1\\s_background_1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -714,7 +730,15 @@
             "Key": "da7dc0b5-11e3-4bd8-a43b-e9ef323baa9e",
             "Value": {
                 "id": "86887754-d520-4f37-a912-1bfa5ebab8bf",
-                "resourcePath": "sprites\\s_werewolf_run\\s_werewolf_run.yy",
+                "resourcePath": "sprites\\s_werewolf_walk\\s_werewolf_walk.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "db01103b-3925-4d90-9a9c-f86af48d68b8",
+            "Value": {
+                "id": "86ddde1f-5a9f-4b14-b744-03edbf121284",
+                "resourcePath": "sprites\\s_cultist_dodge\\s_cultist_dodge.yy",
                 "resourceType": "GMSprite"
             }
         },
