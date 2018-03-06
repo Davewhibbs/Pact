@@ -4,3 +4,4 @@ v_border = 0;
 
 xx = 0;
 yy = 0;
+player_distance = 0;

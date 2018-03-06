@@ -12,6 +12,7 @@ switch (game.playerCount){
 	case 1:
 		xx = global.player_array[0].x;
 		yy = global.player_array[0].y;
+		player_distance = 0;
 		break;
 	case 2:
 		// add up the positions

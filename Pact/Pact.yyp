@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "3ba860e8-4f05-44c0-98ed-2093a6c4bacd",
+            "Value": {
+                "id": "3e0c07f8-57ca-4e61-a7e7-02b3d5eca0b5",
+                "resourcePath": "scripts\\Wander\\Wander.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3c481b57-c51f-4da8-8013-f392f5b30750",
             "Value": {
                 "id": "b39a92cd-e671-4cf7-8c5d-394a1b8df376",
@@ -268,6 +276,14 @@
                 "id": "57291688-a91e-470a-81b8-d441550e325c",
                 "resourcePath": "scripts\\NeutralGround\\NeutralGround.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "57698aaf-a608-4581-9adb-cad51f726d39",
+            "Value": {
+                "id": "f15195c9-1e7e-4415-8ff0-d4c80fc6a201",
+                "resourcePath": "views\\57698aaf-a608-4581-9adb-cad51f726d39.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -655,6 +671,14 @@
             }
         },
         {
+            "Key": "c5969c94-eb0a-4083-9c2a-159aeb35718f",
+            "Value": {
+                "id": "c27c76b0-2b6e-4973-b9e5-d5952911609c",
+                "resourcePath": "objects\\o_human_parent\\o_human_parent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c6b51287-804d-4b20-b8f2-8479f1bd0aec",
             "Value": {
                 "id": "8db12862-e4c8-40a9-8b3d-d531b304b47b",
@@ -880,7 +904,8 @@
         "47e79064-91a8-46b1-bc6e-fb8b3f6d8451",
         "bc002d71-4b7a-437c-b432-c28f54b397e6",
         "bab6c555-5f74-4867-b511-d21074b0e174",
-        "3b1201b1-c6a4-4a21-94c3-9f124105698f"
+        "3b1201b1-c6a4-4a21-94c3-9f124105698f",
+        "3ba860e8-4f05-44c0-98ed-2093a6c4bacd"
     ],
     "tutorial": ""
 }
