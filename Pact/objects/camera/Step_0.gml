@@ -8,7 +8,7 @@ xx = 0;
 yy = 0;
 
 // Find average location of all players
-switch (game.playerCount){
+switch (global.playerCount){
 	case 1:
 		xx = global.player_array[0].x;
 		yy = global.player_array[0].y;
@@ -43,8 +43,8 @@ switch (game.playerCount){
 		break;
 }
 
-xx /= game.playerCount;
-yy /= game.playerCount;
+xx /= global.playerCount;
+yy /= global.playerCount;
 
 x = xx;
 y = yy;

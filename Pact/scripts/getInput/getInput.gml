@@ -8,6 +8,7 @@ input_down			= keyboard_check(vk_down);
 input_attack		= keyboard_check(ord("Z"));
 input_jump			= keyboard_check_pressed(vk_space);
 input_dodge			= keyboard_check_pressed(vk_shift);
+input_heal			= keyboard_check_pressed(ord("C"));
 
 x_input = input_right - input_left;
 y_input = input_down - input_up;

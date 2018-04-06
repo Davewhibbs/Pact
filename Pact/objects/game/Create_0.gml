@@ -1,4 +1,4 @@
-playerCount = 0;
+global.playerCount = 1;
 
 
 //----------DETERMINE WHICH PLAYERS ARE PLUGGED IN
@@ -14,17 +14,17 @@ for (var i = 0; i < gamepad_slots; i++) {
 
 
 //----------DETERMINE NUMBER OF PLAYERS (up to 4)
-for (var i = 0; i < 4; i++) {
+for (var i = 1; i < 4; i++) {
 	if (global.gp[i] == true) {
-		playerCount++;
+		global.playerCount++;
 	}
 }
 
 // create array of players
-global.player_array = [playerCount];
+global.player_array = [global.playerCount];
 
 //----------CREATE PLAYERS AND HEALTHBARS AT SPAWN LOCATIONS
-for (var i = 0; i < playerCount; i++) {
+for (var i = 0; i < global.playerCount; i++) {
 	CreatePlayer(i);
 	CreateHealthBar(global.player_array[i]);
 }

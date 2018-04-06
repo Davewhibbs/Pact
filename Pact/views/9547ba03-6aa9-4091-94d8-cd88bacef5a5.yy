@@ -12,7 +12,8 @@
         "ff5f783e-d3da-4214-94e7-e750eebeb7e8",
         "db01103b-3925-4d90-9a9c-f86af48d68b8",
         "32945964-0da8-49e4-a53c-05bd068125ac",
-        "002e9db9-23c2-48c2-a1e7-f003aca61af5"
+        "002e9db9-23c2-48c2-a1e7-f003aca61af5",
+        "4632c0fd-555a-4651-a62b-a85627bca87f"
     ],
     "filterType": "GMSprite",
     "folderName": "Cultist",

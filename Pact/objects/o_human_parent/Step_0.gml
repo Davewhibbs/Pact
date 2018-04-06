@@ -36,26 +36,47 @@ if (state == human_states.wander){
 
 	
 	// TRANSITION TRIGGERS
+	// Check if it's time to attack
+	if(alarm[1] <= 0){
+		//check if a player is within range
+		for(var i = 0; i < global.playerCount; i++){
+			if global.player_array[i].x <= (x + range * dir){
+				state = human_states.attack;
+				alarm[0] = attack_timer;
+				image_index = 0;
+			}
+		}
+	}
 	
 	// SPRITE
-	sprite_index = s_player_idle;
+	sprite_index = s_human_walk_male;
 }
 #endregion
 
 #region Attack State
 else if (state == human_states.attack){
 	// BEHAVIOR
-	// wind up attack
+	// stop moving
+	velocity = [0,0];
 	
-	// Throw attack
-	
-	// Wind down attack
+	// check attack timer
+	if alarm[0] <= 0{
+		// create a projectile
+		var bullet = instance_create_layer(x + 16*dir, y - 16, "Instances", o_bullet);
+		bullet.dir = dir;
+		
+		// switch to move state
+		state = human_states.wander;
+		
+		// reset attack speed timer
+		alarm[1] = attack_speed;
+	}
 	
 	// TRANSITION TRIGGERS
 	// return to wander at end of attack or if hit
 	
 	// SPRITE
-	
+	sprite_index = s_human_shoot_male;
 }
 #endregion
 
@@ -85,6 +106,15 @@ else if(state == human_states.flee){
 else if(state == human_states.hurt){
 	// BEHAVIOR
 	// Wait until stun timer is over, then switch to wander
+	
+	// Bounce off walls
+	if(place_meeting(x+velocity[h], y, o_wall)){
+		while(!place_meeting(x+1*dir, y, o_wall)){
+			x+=dir;
+		}
+		dir*= -1;
+		velocity[h] *= -1;
+	}
 	
 	// TRANSITION TRIGGERS
 	if (alarm[5] <= 0){
