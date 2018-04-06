@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0bd72df7-3488-42bd-8bf7-3fe3cdeecacd",
+            "Value": {
+                "id": "18f7b677-6f70-4e7a-9572-92f41f5b7b77",
+                "resourcePath": "sprites\\s_cultist_death\\s_cultist_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1123d178-aad3-49c5-a9c8-236e587d7aed",
             "Value": {
                 "id": "54a8df04-f68d-4496-87f7-93bdfa3cbe30",
@@ -212,6 +220,14 @@
                 "id": "9a3c04de-a16c-48ca-90db-4ff6ad681d3c",
                 "resourcePath": "views\\3a42bf24-7e74-4eb8-b656-82ef472dbc6d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3ac3b316-ab64-4fa0-8ce2-0c6e5bed260d",
+            "Value": {
+                "id": "b11650ea-b108-4f54-b702-e428dd65051d",
+                "resourcePath": "sprites\\s_projectile\\s_projectile.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -37,16 +37,16 @@ if (state == human_states.wander){
 	
 	// TRANSITION TRIGGERS
 	// Check if it's time to attack
-	if(alarm[1] <= 0){
-		//check if a player is within range
-		for(var i = 0; i < global.playerCount; i++){
-			if global.player_array[i].x <= (x + range * dir){
-				state = human_states.attack;
-				alarm[0] = attack_timer;
-				image_index = 0;
-			}
-		}
-	}
+	//if(alarm[1] <= 0){
+	//	//check if a player is within range
+	//	for(var i = 0; i < global.playerCount; i++){
+	//		if global.player_array[i].x <= (x + range * dir){
+	//			state = human_states.attack;
+	//			alarm[0] = attack_timer;
+	//			image_index = 0;
+	//		}
+	//	}
+	//}
 	
 	// SPRITE
 	sprite_index = s_human_walk_male;
@@ -116,6 +116,9 @@ else if(state == human_states.hurt){
 		velocity[h] *= -1;
 	}
 	
+	// Accelerate only with gravity
+	velocity[v] = Approach(velocity[v], fall_speed, grav);
+	
 	// TRANSITION TRIGGERS
 	if (alarm[5] <= 0){
 		state = human_states.wander;
@@ -130,7 +133,7 @@ else if(state == human_states.hurt){
 else if(state == human_states.death){
 	// BEHAVIOR
 	// Spawn a soul fragment
-	instance_create_layer(x, y, "Instances", o_soulFragment);
+	instance_create_layer(x, y - 32, "Instances", o_soulFragment);
 	
 	// Create death object
 	

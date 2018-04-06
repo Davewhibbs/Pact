@@ -99,6 +99,11 @@ heal_amount = 15;
 
 
 // Dying/Respawning
+respawn_timer = 4 * room_speed;
+alarm[6] = 0;
+death_anim = false;
+anim_speed = image_speed;
+
 
 // 2D Sprite array --- Sprites are determined by the player's locations and actions
 location = GROUND;
@@ -116,6 +121,8 @@ Sprite[AIR, DODGE]		= s_cultist_dodge;
 Sprite[GROUND, HEAL]	= s_cultist_heal;
 Sprite[GROUND, HURT]	= s_cultist_hurt;
 Sprite[AIR, HURT]		= s_cultist_hurt;
+Sprite[GROUND, DEATH]	= s_cultist_death;
+Sprite[AIR, DEATH]	= s_cultist_death;
 
 
 

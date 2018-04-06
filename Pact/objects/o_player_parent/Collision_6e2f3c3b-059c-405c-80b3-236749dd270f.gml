@@ -1,7 +1,11 @@
 // Destroy the soul fragment object and increment soulFrag
 
-instance_destroy(other);
+//only pick them up if you aren't dead
 
-if (soulFrags + 1 <= max_soulFrags) {
-	soulFrags++;	
+if state != states.death{
+	instance_destroy(other);
+	
+	if (soulFrags + 1 <= max_soulFrags) {
+		soulFrags++;	
+	}
 }

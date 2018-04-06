@@ -155,9 +155,7 @@
 		}
 		
 		//------------SPRITE
-		
-	
-	
+		action = HURT;
 	}
 #endregion
 
@@ -179,16 +177,50 @@
 #region Dying
 	else if state == states.death{
 		//------------FUNCTIONALITY
-		// No control over movement
-		HurtMovement();
-		
-		
+		// stop animation once it finishes
+		if death_anim == false {
+			if image_index == 9{
+				image_speed = 0;
+				death_anim = true;
+			}
+		}
 		
 		//------------STATE SWITCHES
 		// Respawn
+		// after respawn timer, respawn at corresponding spawn point
+		if alarm[6] <= 0 {
+			if (ID == 0) {
+				x = spawn_0.x;
+				y = spawn_0.y;
+			}
+			else if (ID == 1) {
+				x = spawn_1.x;
+				y = spawn_1.y;
+			}
+			else if (ID == 2) {
+				x = spawn_2.x;
+				y = spawn_2.y;
+			}
+			else if (ID == 3) {
+				x = spawn_3.x;
+				y = spawn_3.y;
+			}
+		
+			// reset image_speed
+			image_speed = anim_speed;
+			
+			// reset health 
+			hp = max_hp;
+			
+			// reset souls
+			soulFrags = 0;
+			
+			// switch to neutral state
+			state = states.neutral;
+		}
 		
 		//------------SPRITE
-		
+		action = DEATH;
 	
 	
 	}
