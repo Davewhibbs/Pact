@@ -29,8 +29,28 @@
 		
 		// Transform
 		if soulFrags == max_soulFrags {
-			
-			// Transformation script
+			if input_transform{
+				// reset the animation frame
+				image_index = 0;
+				
+				// set timers
+				alarm[7] = transform_anim_timer;
+				alarm[8] = transform_duration;
+				
+				// call transform script once
+				TransformUp();
+				
+				state = states.evolve;
+			}
+		}
+		
+		// Transsform down
+		if transformed == true {
+			if alarm[8] <= 0{
+				alarm[7] = transform_anim_timer;
+				TransformDown();
+				state = states.evolve;
+			}
 		}
 		
 		// Heal
@@ -234,13 +254,15 @@
 #region Evolve
 	else if state == states.evolve{
 		//------------FUNCTIONALITY
-		
+		velocity = [0,0];
 		
 		//------------STATE SWITCHES
-		
+		if alarm[7] <= 0 {
+			state = states.neutral;
+		}
 		
 		//------------SPRITE
-		
+		action = TRANSFORM;
 	}
 #endregion
 

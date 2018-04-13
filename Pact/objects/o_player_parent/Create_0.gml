@@ -97,6 +97,13 @@ alarm[3] = 0;
 heal_timer = 60;
 heal_amount = 15;
 
+// TRANSFORMATION VARIABLES
+alarm[7] = 0;
+alarm[8] = 0;
+transform_anim_timer = room_speed / 4 * 15 / 4;
+transform_duration	 = room_speed * 10;
+transformed = false;
+
 
 // Dying/Respawning
 respawn_timer = 4 * room_speed;
@@ -113,6 +120,8 @@ Sprite[GROUND, IDLE]	= s_cultist_idle;
 Sprite[GROUND, MOVE]	= s_cultist_run;
 Sprite[GROUND, ATTACK]	= s_cultist_attack;
 Sprite[AIR, ATTACK]		= s_cultist_attack;
+Sprite[GROUND, ATTACK2]	= s_cultist_shoot;
+Sprite[AIR, ATTACK2]	= s_cultist_shoot;
 Sprite[GROUND, JUMP]	= s_cultist_jump;
 Sprite[AIR,	JUMP]		= s_cultist_jump;
 Sprite[AIR, FALL]		= s_cultist_jump;
@@ -121,8 +130,11 @@ Sprite[AIR, DODGE]		= s_cultist_dodge;
 Sprite[GROUND, HEAL]	= s_cultist_heal;
 Sprite[GROUND, HURT]	= s_cultist_hurt;
 Sprite[AIR, HURT]		= s_cultist_hurt;
-Sprite[GROUND, DEATH]	= s_cultist_death;
-Sprite[AIR, DEATH]	= s_cultist_death;
+Sprite[GROUND, DEATH]	= s_cultist_death_2;
+Sprite[AIR, DEATH]		= s_cultist_death;
+Sprite[AIR, TRANSFORM]	= s_cultist_transform;
+Sprite[GROUND, TRANSFORM] = s_cultist_transform;
+
 
 
 
