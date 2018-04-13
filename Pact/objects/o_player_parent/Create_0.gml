@@ -10,6 +10,14 @@ max_speed = 8;			// Clamped maximum horizontal speed
 acceleration = 1;		// Change in speed from moving
 jump_height = -10;		// Vertical speed of jumping
 
+// SHADER VARIABLES
+red = 0;
+green = 0;
+blue = 0;
+alpha = 0;
+flash_speed = 0.05;
+flash = 0;
+
 // SPECIAL GAME VARIABLES
 max_hp = 100;
 hp = max_hp;
@@ -26,6 +34,10 @@ dodges = max_dodges;
 dodge_timer = 20;
 dodge_speed = 10;
 alarm[0] = 0;
+
+// PROJECTILE ATTACK VARIABLES
+projectile_spawn_timer = room_speed / 20 * 15;
+alarm[9] = 0;
 
 
 // ATTACKING VARIABLES
@@ -103,6 +115,7 @@ alarm[8] = 0;
 transform_anim_timer = room_speed / 4 * 15 / 4;
 transform_duration	 = room_speed * 10;
 transformed = false;
+transform_mid_timer = room_speed/4*6;
 
 
 // Dying/Respawning
@@ -142,6 +155,7 @@ Sprite[GROUND, TRANSFORM] = s_cultist_transform;
 enum states {
 	neutral,
 	attack,
+	alt_attack,
 	evolve,
 	healing,
 	dodge,

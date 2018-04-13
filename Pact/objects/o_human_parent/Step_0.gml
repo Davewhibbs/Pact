@@ -125,7 +125,7 @@ else if(state == human_states.hurt){
 	}
 	
 	// SPRITE
-	sprite_index = s_player_hurt;
+	sprite_index = s_human_hurt_male;
 }
 #endregion
 

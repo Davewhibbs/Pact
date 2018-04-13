@@ -30,13 +30,16 @@
 		// Transform
 		if soulFrags == max_soulFrags {
 			if input_transform{
+				// Jump!
+				Jump();
+				
 				// reset the animation frame
 				image_index = 0;
 				
 				// set timers
 				alarm[7] = transform_anim_timer;
 				alarm[8] = transform_duration;
-				
+				transform_mid_timer = 20;
 				// call transform script once
 				TransformUp();
 				
@@ -47,7 +50,12 @@
 		// Transsform down
 		if transformed == true {
 			if alarm[8] <= 0{
+				// Jump!
+				Jump();
+				image_index = 0;
 				alarm[7] = transform_anim_timer;
+				alarm[8] = transform_duration;
+				transform_mid_timer = 20;
 				TransformDown();
 				state = states.evolve;
 			}
@@ -76,11 +84,23 @@
 				// Set attack variables ONCE based on the specific attack
 				SetAttackVariables();
 				
-				
-				
 				state = states.attack;
 			}
 		}
+		
+		// Alternate Attack	HADOUKEN
+		if input_alt_attack {
+			if soulFrags > 0{
+				if alarm[1] <=0 {
+					image_index = 0;
+					alarm[1] = attack_timer;
+					alarm[9] = projectile_spawn_timer;
+					
+					state = states.alt_attack;
+				}
+			}
+		}
+		
 		
 	}
 
@@ -113,6 +133,33 @@
 		//------------SPRITE
 		action = ATTACK;
 	
+	}
+#endregion
+
+#region Alternate Attack - Projectile
+	else if state == states.alt_attack{
+		//------------FUNCTIONALITY
+		
+		// full control
+		GetInput();
+		NeutralMovement();
+		
+		
+		//------------STATE SWITCHES
+		if alarm[9] <= 0 {
+			// create a projectile
+			var proj = instance_create_layer(x + 32 * dir, y - 20, "Instances", o_projectile);
+			proj.dir = dir;
+			proj.ID = ID;
+			soulFrags --;
+			
+			// switch to neutral
+			state = states.neutral;
+		}
+		
+		
+		//------------SPRITE
+		action = ATTACK2;
 	}
 #endregion
 
@@ -163,8 +210,6 @@
 #region Hurt
 	else if state == states.hurt{
 		//------------FUNCTIONALITY
-		show_debug_message(string(ID) + ": hit");
-		
 		// Move with no control
 		HurtMovement();
 		
@@ -199,7 +244,7 @@
 		//------------FUNCTIONALITY
 		// stop animation once it finishes
 		if death_anim == false {
-			if image_index == 9{
+			if image_index >= 9{
 				image_speed = 0;
 				death_anim = true;
 				
@@ -254,7 +299,15 @@
 #region Evolve
 	else if state == states.evolve{
 		//------------FUNCTIONALITY
-		velocity = [0,0];
+		if transform_mid_timer >=0 {
+			transform_mid_timer--;
+			GetInput();
+			NeutralMovement();
+		}
+		else{
+			velocity=[0,0];
+		}
+		
 		
 		//------------STATE SWITCHES
 		if alarm[7] <= 0 {

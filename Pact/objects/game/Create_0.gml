@@ -32,3 +32,5 @@ for (var i = 0; i < global.playerCount; i++) {
 //----------CREATE CAMERA (so it doesn't run any code before this)
 instance_create_layer(0,0,"Instances", camera);
 
+//----------START THE MUSIC
+audio_play_sound(Bloodbath, 0, true);

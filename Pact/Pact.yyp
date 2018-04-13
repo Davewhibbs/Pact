@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "35c1e515-c06d-4778-ae44-01fe82a8dfd7",
+            "Value": {
+                "id": "dfb51d67-493e-4c44-be56-3e727a68dfe4",
+                "resourcePath": "sprites\\s_human_hurt_male\\s_human_hurt_male.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "35dc658d-ce17-46e4-afd5-31de700faae7",
             "Value": {
                 "id": "252eb04b-5109-4d43-b8fa-093b5dc1ebbd",
@@ -283,6 +291,14 @@
             "Value": {
                 "id": "92a5464f-b193-4e1d-a9a7-2ef49294f3d9",
                 "resourcePath": "scripts\\SNeutralAir\\SNeutralAir.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "433e801e-948f-464b-afe2-7b10989d3662",
+            "Value": {
+                "id": "086f5370-e63c-4e39-a227-707933855bc5",
+                "resourcePath": "scripts\\Flash\\Flash.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -476,6 +492,14 @@
                 "id": "8cdbe1a0-654b-4c5f-a807-aa971db314ec",
                 "resourcePath": "scripts\\LeftRightGround\\LeftRightGround.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6c32dd7d-ad72-4d07-aa00-4fa25063dbe8",
+            "Value": {
+                "id": "ad111283-1eb1-4b2c-a25d-b5d4557fb51a",
+                "resourcePath": "shaders\\shd_flash\\shd_flash.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -1087,6 +1111,7 @@
         "2cd640ea-0217-4187-b719-f61d5b361a92",
         "888960d7-c8cd-426d-a02b-70d357744bf2",
         "9c335026-8238-4932-ae2a-cef43eaeea16",
+        "433e801e-948f-464b-afe2-7b10989d3662",
         "47e79064-91a8-46b1-bc6e-fb8b3f6d8451",
         "bc002d71-4b7a-437c-b432-c28f54b397e6",
         "bab6c555-5f74-4867-b511-d21074b0e174",
