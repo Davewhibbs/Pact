@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "00f8cf57-5046-454c-ba8b-493eef040bd1",
+            "Value": {
+                "id": "247fca39-e419-47b9-bc4e-22f3097074ef",
+                "resourcePath": "scripts\\CalculateCameraSize\\CalculateCameraSize.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "01520f56-2a50-4667-a255-8379102e656a",
             "Value": {
                 "id": "caa12f43-a56c-48fd-999e-5f02d52a6c8a",
@@ -187,6 +195,14 @@
             "Value": {
                 "id": "721637fc-7cb0-4042-8b04-10e72cb4a353",
                 "resourcePath": "sprites\\s_player_heal\\s_player_heal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2848fc79-79de-4d9b-b349-546ffb320767",
+            "Value": {
+                "id": "1586dcda-6d4c-4fbd-a105-069e42b5b8e4",
+                "resourcePath": "sprites\\s_deer_attack\\s_deer_attack.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1116,7 +1132,8 @@
         "bc002d71-4b7a-437c-b432-c28f54b397e6",
         "bab6c555-5f74-4867-b511-d21074b0e174",
         "3b1201b1-c6a4-4a21-94c3-9f124105698f",
-        "3ba860e8-4f05-44c0-98ed-2093a6c4bacd"
+        "3ba860e8-4f05-44c0-98ed-2093a6c4bacd",
+        "00f8cf57-5046-454c-ba8b-493eef040bd1"
     ],
     "tutorial": ""
 }
