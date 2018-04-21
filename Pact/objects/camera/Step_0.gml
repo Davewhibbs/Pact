@@ -72,8 +72,8 @@ camera_set_view_size(view_camera[0], viewWidth, viewHeight);
 xx /= global.playerCount;
 yy /= global.playerCount;
 
-xx -= maxWinWidth/2;
-yy -= maxWinHeight/2;
+//xx -= maxWinWidth/2;
+//yy -= maxWinHeight/2;
 
 x = xx;
 y = yy;

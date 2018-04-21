@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "36063526-e4f4-4c1a-af5a-b878201fc9e6",
+            "Value": {
+                "id": "25acf70c-8e8c-429e-b688-0d4a522ee162",
+                "resourcePath": "sprites\\s_tile_3\\s_tile_3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "386f37b1-b595-4cca-a276-677f096aea08",
             "Value": {
                 "id": "681a7d12-539f-4bcb-a7c7-23478d0b58a4",
@@ -292,6 +300,14 @@
                 "id": "b39a92cd-e671-4cf7-8c5d-394a1b8df376",
                 "resourcePath": "views\\3c481b57-c51f-4da8-8013-f392f5b30750.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3c627be5-ed32-4f23-84c5-2353a5e92235",
+            "Value": {
+                "id": "e59d4551-0a59-4eab-8de5-a4fb915bbd09",
+                "resourcePath": "sprites\\s_deer_jump\\s_deer_jump.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -503,6 +519,14 @@
             }
         },
         {
+            "Key": "6a04563d-3817-46f6-9921-8d4fbf0b7a6e",
+            "Value": {
+                "id": "45c2c8fc-750a-4277-940d-4ec8d9fb1fe5",
+                "resourcePath": "sprites\\s_deer_dodge\\s_deer_dodge.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6b295b7a-801d-422a-a7b3-6cf3b4244f0e",
             "Value": {
                 "id": "8cdbe1a0-654b-4c5f-a807-aa971db314ec",
@@ -535,11 +559,35 @@
             }
         },
         {
+            "Key": "704f1897-5219-45f1-8327-966cbfb52019",
+            "Value": {
+                "id": "289be22a-4041-4bc1-9b02-6bc3d45c7097",
+                "resourcePath": "sprites\\s_tile_1\\s_tile_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7111924e-59e9-400c-a655-f782509a6b10",
             "Value": {
                 "id": "c9b9bd81-e050-4254-bcff-136bed20b028",
                 "resourcePath": "objects\\spawn_2\\spawn_2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "72e7709f-e7f7-4848-8827-ce49fa8914c3",
+            "Value": {
+                "id": "a4c03bb9-558c-4840-81bd-a926e9aba077",
+                "resourcePath": "scripts\\SetTile\\SetTile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7507a6f4-b1b2-40af-915a-6269c6a245d6",
+            "Value": {
+                "id": "d86d46da-b866-4222-81c1-9789110a0044",
+                "resourcePath": "sprites\\s_tile_2\\s_tile_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -975,6 +1023,14 @@
             }
         },
         {
+            "Key": "dd57575b-1a58-4c12-8152-dfe28651225a",
+            "Value": {
+                "id": "a660250d-d90b-4b3c-a9c7-fb84aae2a8f6",
+                "resourcePath": "sprites\\s_deer_attack_special\\s_deer_attack_special.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ddadae51-da9e-4de2-b9f6-65e09fb06348",
             "Value": {
                 "id": "c188da99-807e-4a2e-bd5d-04929614c27e",
@@ -1133,7 +1189,8 @@
         "bab6c555-5f74-4867-b511-d21074b0e174",
         "3b1201b1-c6a4-4a21-94c3-9f124105698f",
         "3ba860e8-4f05-44c0-98ed-2093a6c4bacd",
-        "00f8cf57-5046-454c-ba8b-493eef040bd1"
+        "00f8cf57-5046-454c-ba8b-493eef040bd1",
+        "72e7709f-e7f7-4848-8827-ce49fa8914c3"
     ],
     "tutorial": ""
 }
