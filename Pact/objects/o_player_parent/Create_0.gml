@@ -59,8 +59,8 @@ attack_xOffset = [0, 0]; // Holds info on the offsets of each attack
 attack_yOffset = [0, 0]; // Holds info on the offsets of each attack
 
 // NeutralGround
-attack_xOffset[GROUND, NODIR] = 20;	
-attack_yOffset[GROUND, NODIR] = 20;
+attack_xOffset[GROUND, NODIR] = 32;	
+attack_yOffset[GROUND, NODIR] = 32;
 
 // LeftRightGround
 attack_xOffset[GROUND, LEFT] = 32;	

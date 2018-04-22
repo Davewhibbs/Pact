@@ -5,6 +5,9 @@ if(setup == 0){
 	setup++;
 }
 
+x += global.player_array[ID].velocity[h];
+y += global.player_array[ID].velocity[v];
+
 if alarm[0] <= 0 {
 	instance_destroy();
 }

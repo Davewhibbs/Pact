@@ -153,6 +153,13 @@
 			proj.ID = ID;
 			soulFrags --;
 			
+			// if transformed, create another projectile in the opposite direction
+			if transformed {
+				var proj2 = instance_create_layer(x - 32 * dir, y - 20, "Instances", o_projectile);
+				proj2.dir = -dir;
+				proj2.ID = ID;
+			}
+			
 			// switch to neutral
 			state = states.neutral;
 		}

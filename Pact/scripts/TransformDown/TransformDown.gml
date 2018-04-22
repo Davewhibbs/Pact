@@ -15,5 +15,19 @@ Sprite[AIR, DODGE] = s_cultist_dodge;
 Sprite[GROUND, DODGE] = s_cultist_dodge;
 
 
+max_speed = 8;
+jump_height = -10;
+
+// Reset Attack offsets
+// NeutralGround
+attack_xOffset[GROUND, NODIR] = 32;	
+attack_yOffset[GROUND, NODIR] = 32;
+
+// LeftRightGround
+attack_xOffset[GROUND, LEFT] = 32;	
+attack_yOffset[GROUND, LEFT] = 32;
+attack_xOffset[GROUND, RIGHT] = 32;	
+attack_yOffset[GROUND, RIGHT] = 32;
+
 // set Transformed property
 transformed = false;
