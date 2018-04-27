@@ -13,13 +13,18 @@ Sprite[GROUND, ATTACK2] = s_deer_attack_special;
 Sprite[AIR, ATTACK2] = s_deer_attack_special;
 Sprite[AIR, DODGE] = s_deer_dodge;
 Sprite[GROUND, DODGE] = s_deer_dodge;
+Sprite[GROUND, TRANSFORM] = s_cultist_transform;
+Sprite[AIR, TRANSFORM] = s_cultist_transform;
+
 
 max_speed = 10;
 jump_height = -12;
 hp += 25;
 if(hp <= 0) hp = 0;
 
-damage = 25;
+damage = 40;
+
+projectile_spawn_timer = room_speed * .9;
 
 // Attack Offsets
 // NeutralGround

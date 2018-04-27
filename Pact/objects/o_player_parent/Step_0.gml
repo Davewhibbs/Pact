@@ -50,8 +50,6 @@
 		// Transsform down
 		if transformed == true {
 			if alarm[8] <= 0{
-				// Jump!
-				Jump();
 				image_index = 0;
 				alarm[7] = transform_anim_timer;
 				alarm[8] = transform_duration;
@@ -84,6 +82,7 @@
 				// Set attack variables ONCE based on the specific attack
 				SetAttackVariables();
 				
+				attack_proj_timer = attack_proj_timer_value;
 				state = states.attack;
 			}
 		}
@@ -116,12 +115,8 @@
 		
 		// Execute Attack based on the attack_dir
 		if (attacked == false){
-			ExecuteAttack();
-		}	
-	
-		
-		
-		
+			NeutralGround();
+		}
 		
 		
 		//------------STATE SWITCHES
@@ -144,21 +139,28 @@
 		GetInput();
 		NeutralMovement();
 		
+		if transformed{
+			// Create hitboxes on the player for every frame
+			CreateHitBox(x + 10* dir, y-35 , 1, damage,  5 * dir, -5, ID);
+		}
 		
 		//------------STATE SWITCHES
 		if alarm[9] <= 0 {
 			// create a projectile
-			var proj = instance_create_layer(x + 32 * dir, y - 20, "Instances", o_projectile);
+			// check if transformed
+			if transformed{
+				var proj = instance_create_layer(x + 32 * dir, y - 20, "Instances", o_deer_projectile);
+				
+				// if transformed, create another projectile in the opposite direction
+				var proj2 = instance_create_layer(x - 32 * dir, y - 20, "Instances", o_deer_projectile);
+				proj2.dir = -dir;
+				proj2.ID = ID;
+			}else{
+				var proj = instance_create_layer(x + 32 * dir, y - 20, "Instances", o_projectile);
+			}
 			proj.dir = dir;
 			proj.ID = ID;
 			soulFrags --;
-			
-			// if transformed, create another projectile in the opposite direction
-			if transformed {
-				var proj2 = instance_create_layer(x - 32 * dir, y - 20, "Instances", o_projectile);
-				proj2.dir = -dir;
-				proj2.ID = ID;
-			}
 			
 			// switch to neutral
 			state = states.neutral;

@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "46a8c29b-b342-4075-8ba4-03996e5d0d9b",
+            "Value": {
+                "id": "86f040f7-328b-46ba-932b-fdd72e68a495",
+                "resourcePath": "sprites\\s_deer_projectile\\s_deer_projectile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "47e79064-91a8-46b1-bc6e-fb8b3f6d8451",
             "Value": {
                 "id": "efa51b61-d8d7-49c0-8ac5-78efdd3d9694",
@@ -775,6 +783,14 @@
             }
         },
         {
+            "Key": "95702e03-81c0-4f52-a25c-d04999d369a7",
+            "Value": {
+                "id": "45d330f2-c0c9-4b21-957a-f458482fb588",
+                "resourcePath": "sprites\\s_deer_transform\\s_deer_transform.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "982c4af6-5b42-4aa5-a949-03e281e3e784",
             "Value": {
                 "id": "95c145ed-b8aa-4da8-abc8-49e19e2b4b65",
@@ -836,6 +852,14 @@
                 "id": "a84ede52-c2a8-4942-aec0-38478e17ee0e",
                 "resourcePath": "scripts\\HurtMovement\\HurtMovement.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a311f80d-6838-4146-985e-9aeed7fe223b",
+            "Value": {
+                "id": "05542b5d-07a2-450d-98a8-bb4166921400",
+                "resourcePath": "objects\\o_deer_projectile\\o_deer_projectile.yy",
+                "resourceType": "GMObject"
             }
         },
         {
