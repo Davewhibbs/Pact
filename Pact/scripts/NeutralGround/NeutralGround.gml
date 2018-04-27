@@ -21,7 +21,7 @@ if (alarm[4] <=0) {
 	// if transformed, also shoot a projectile
 	if transformed{
 		// create a projectile
-		var proj = instance_create_layer(x + 32 * dir, y - 20, "Instances", o_projectile);
+		var proj = instance_create_layer(x + 32 * dir, y - 20, "Instances", o_deer_projectile);
 		proj.dir = dir;
 		proj.ID = ID;
 		proj.lifetime = room_speed * .2;

@@ -43,14 +43,14 @@ alarm[9] = 0;
 // ATTACKING VARIABLES
 sequenceCount = 0;	//Combo counter
 attacked = false;
-attack_timer = 10;
+attack_timer = 8;
 attack_proj_timer = 0;
 attack_proj_timer_value = room_speed * .5;
 projAtk = false;
 combo_timer = 30;
 hitbox_creation_timer = .1 * room_speed; // half a second
 attack_dir = 0;
-damage = 25;
+damage = 15;
 alarm[1] = 0;
 alarm[2] = 0;
 combo[0] = s_werewolf_attack;

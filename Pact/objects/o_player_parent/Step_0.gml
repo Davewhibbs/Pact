@@ -141,7 +141,7 @@
 		
 		if transformed{
 			// Create hitboxes on the player for every frame
-			CreateHitBox(x + 10* dir, y-35 , 1, damage,  5 * dir, -5, ID);
+			CreateHitBox(x + 10* dir, y-35 , 1, 10,  1 * dir, -7, ID);
 		}
 		
 		//------------STATE SWITCHES
@@ -149,10 +149,10 @@
 			// create a projectile
 			// check if transformed
 			if transformed{
-				var proj = instance_create_layer(x + 32 * dir, y - 20, "Instances", o_deer_projectile);
+				var proj = instance_create_layer(x + 32 * dir, y - 20, "Instances", o_deer_projectile_big);
 				
 				// if transformed, create another projectile in the opposite direction
-				var proj2 = instance_create_layer(x - 32 * dir, y - 20, "Instances", o_deer_projectile);
+				var proj2 = instance_create_layer(x - 32 * dir, y - 20, "Instances", o_deer_projectile_big);
 				proj2.dir = -dir;
 				proj2.ID = ID;
 			}else{
@@ -254,14 +254,20 @@
 		// stop animation once it finishes
 		if death_anim == false {
 			if image_index >= 9{
+				image_index = 11;
 				image_speed = 0;
 				death_anim = true;
 				
 				// spawn a soul frag
 				instance_create_layer(x, y-32, "Instances", o_soulFragment);
-				
-				
-				// move the body to the spawn point
+			}
+		}
+		
+		//------------STATE SWITCHES
+		// Respawn
+		// after respawn timer, respawn at corresponding spawn point
+		if alarm[6] <= 0 {
+			// move the body to the spawn point
 				if (ID == 0) {
 					x = spawn_0.x;
 					y = spawn_0.y;
@@ -278,13 +284,8 @@
 					x = spawn_3.x;
 					y = spawn_3.y;
 				}
-			}
-		}
-		
-		//------------STATE SWITCHES
-		// Respawn
-		// after respawn timer, respawn at corresponding spawn point
-		if alarm[6] <= 0 {
+			
+			
 			// reset image_speed
 			image_speed = anim_speed;
 			

@@ -6,3 +6,6 @@ damage = 25;
 ID = 0;
 xForce = 6;
 yForce = -7;
+lifetime = .5 * room_speed;
+alarm[0] = lifetime
+start = true

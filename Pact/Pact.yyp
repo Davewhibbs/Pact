@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "15e5afa0-55be-4976-902c-db8f7b119ff8",
+            "Value": {
+                "id": "52c15d1d-dc59-48fb-9d2a-df387b1c5bec",
+                "resourcePath": "objects\\o_tutorial\\o_tutorial.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1638ac2a-4fb0-4c7f-887c-fc86bba8a7fc",
             "Value": {
                 "id": "61f57c4e-2bcb-436a-824c-8e1033cdc2b3",
@@ -167,6 +175,14 @@
             }
         },
         {
+            "Key": "1b4a3714-d1fd-4854-8bd6-3bf3f8ad7e2f",
+            "Value": {
+                "id": "973c1276-4470-424c-9a10-a4ea607be0b7",
+                "resourcePath": "sprites\\s_tutorial\\s_tutorial.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1c58c590-2d4a-469c-a53d-8a5f704f37a2",
             "Value": {
                 "id": "fbb7ea0c-cba1-4416-bba0-e4d0d37d779d",
@@ -191,6 +207,14 @@
             }
         },
         {
+            "Key": "250e8e38-753a-48b1-9df0-17652a3ad426",
+            "Value": {
+                "id": "b63da62c-714d-4df8-ad4a-0eefff18676f",
+                "resourcePath": "objects\\o_deer_projectile_big\\o_deer_projectile_big.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2588c9e9-e56f-438d-94e1-265cdc49de2c",
             "Value": {
                 "id": "2842dc84-6a19-49e6-bbb2-88d714de5805",
@@ -211,6 +235,14 @@
             "Value": {
                 "id": "1586dcda-6d4c-4fbd-a105-069e42b5b8e4",
                 "resourcePath": "sprites\\s_deer_attack\\s_deer_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "29df0bb8-1b35-4fa5-9f24-d70b05710273",
+            "Value": {
+                "id": "917202ee-2e99-40f2-ac49-c0dcb2ea0be0",
+                "resourcePath": "sprites\\s_deer_projectile_big\\s_deer_projectile_big.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -275,6 +307,14 @@
             "Value": {
                 "id": "25acf70c-8e8c-429e-b688-0d4a522ee162",
                 "resourcePath": "sprites\\s_tile_3\\s_tile_3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3635717b-49f7-43ed-a319-0e7545e6d77d",
+            "Value": {
+                "id": "fa221c68-8829-4259-bb51-8d468e8bc765",
+                "resourcePath": "sprites\\s_start_portal\\s_start_portal.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -895,6 +935,14 @@
             }
         },
         {
+            "Key": "a9ebc909-445c-4451-af3d-1bee34ab9ba2",
+            "Value": {
+                "id": "02606276-df3d-4f7c-a624-31bdb2a869a3",
+                "resourcePath": "rooms\\room2\\room2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "aacef750-6804-43d5-b037-895f561b794e",
             "Value": {
                 "id": "c90e0280-2388-4c33-b466-46f243fe6d37",
@@ -940,6 +988,14 @@
                 "id": "30ba5b62-9e4b-4a2a-8056-e11ee1d4f78d",
                 "resourcePath": "scripts\\SetHitBoxAlarm\\SetHitBoxAlarm.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "bb61a8ac-3bd9-45f5-994e-8279e074d9fb",
+            "Value": {
+                "id": "46cea2ac-0c88-49fb-854f-ee266e1c49bb",
+                "resourcePath": "objects\\o_start_portal\\o_start_portal.yy",
+                "resourceType": "GMObject"
             }
         },
         {
