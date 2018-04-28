@@ -15,9 +15,9 @@ if active == true {
 		}
 	}
 	
-	// if A is pressed, ENTER THE GAME
+	// if A is pressed, quit the game
 	if gamepad_button_check_released(0, gp_face1){
-		room_goto_next();
+		game_end();
 	}
 	
 	// Set Hover Sprite

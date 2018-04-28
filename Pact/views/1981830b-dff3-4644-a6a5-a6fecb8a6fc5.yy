@@ -12,7 +12,8 @@
         "6a04563d-3817-46f6-9921-8d4fbf0b7a6e",
         "46a8c29b-b342-4075-8ba4-03996e5d0d9b",
         "29df0bb8-1b35-4fa5-9f24-d70b05710273",
-        "95702e03-81c0-4f52-a25c-d04999d369a7"
+        "95702e03-81c0-4f52-a25c-d04999d369a7",
+        "99b49d3f-8ae2-40f0-accf-4d9635801b42"
     ],
     "filterType": "GMSprite",
     "folderName": "Deer",

@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "220b2382-6864-4810-b44c-745ff2ea23aa",
+            "Value": {
+                "id": "2724e80e-19c2-41b3-9e3f-00ddcf24bc42",
+                "resourcePath": "sprites\\sprite59\\sprite59.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "23c49602-7a28-441d-a934-e2b65e8f31c6",
             "Value": {
                 "id": "2bb00a07-df75-472f-be4f-6b777b994eb7",
@@ -314,7 +322,7 @@
             "Key": "3635717b-49f7-43ed-a319-0e7545e6d77d",
             "Value": {
                 "id": "fa221c68-8829-4259-bb51-8d468e8bc765",
-                "resourcePath": "sprites\\s_start_portal\\s_start_portal.yy",
+                "resourcePath": "sprites\\s_portal_forest\\s_portal_forest.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -818,7 +826,7 @@
             "Key": "954dbed3-aa07-47cf-81a5-434c4b0e6e1f",
             "Value": {
                 "id": "8fa7529a-951a-46fd-91d8-387e8a04d9ad",
-                "resourcePath": "rooms\\room0\\room0.yy",
+                "resourcePath": "rooms\\Forest\\Forest.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -835,6 +843,14 @@
             "Value": {
                 "id": "95c145ed-b8aa-4da8-abc8-49e19e2b4b65",
                 "resourcePath": "sprites\\s_player_run\\s_player_run.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "99b49d3f-8ae2-40f0-accf-4d9635801b42",
+            "Value": {
+                "id": "b27b2fea-96a4-450c-8f6e-de0cf487781a",
+                "resourcePath": "sprites\\s_deer_heal\\s_deer_heal.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -938,7 +954,7 @@
             "Key": "a9ebc909-445c-4451-af3d-1bee34ab9ba2",
             "Value": {
                 "id": "02606276-df3d-4f7c-a624-31bdb2a869a3",
-                "resourcePath": "rooms\\room2\\room2.yy",
+                "resourcePath": "rooms\\Tutorial\\Tutorial.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -948,6 +964,14 @@
                 "id": "c90e0280-2388-4c33-b466-46f243fe6d37",
                 "resourcePath": "views\\aacef750-6804-43d5-b037-895f561b794e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "adf551c6-6b8f-4165-b70b-4e650aef233e",
+            "Value": {
+                "id": "be6d251c-c587-4ce7-ac2a-e97ed869e839",
+                "resourcePath": "objects\\o_portal_ruins\\o_portal_ruins.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -994,7 +1018,7 @@
             "Key": "bb61a8ac-3bd9-45f5-994e-8279e074d9fb",
             "Value": {
                 "id": "46cea2ac-0c88-49fb-854f-ee266e1c49bb",
-                "resourcePath": "objects\\o_start_portal\\o_start_portal.yy",
+                "resourcePath": "objects\\o_portal_forest\\o_portal_forest.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1026,7 +1050,7 @@
             "Key": "bfd9e275-8743-4525-9794-bcbbc00dd942",
             "Value": {
                 "id": "df549ee0-971d-4c14-96db-3bb2c3d8accf",
-                "resourcePath": "rooms\\room1\\room1.yy",
+                "resourcePath": "rooms\\Start\\Start.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -1052,6 +1076,14 @@
                 "id": "c27c76b0-2b6e-4973-b9e5-d5952911609c",
                 "resourcePath": "objects\\o_human_parent\\o_human_parent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c6281962-09a4-43ae-a8c9-a05306b1b177",
+            "Value": {
+                "id": "e76015ba-dd66-4bd0-8a03-d23c51498cc5",
+                "resourcePath": "rooms\\Ruins\\Ruins.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1099,6 +1131,14 @@
             "Value": {
                 "id": "e8c4036f-79c8-4545-a0b9-2f4f9c0b0830",
                 "resourcePath": "sprites\\s_human_walk_male\\s_human_walk_male.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ce6dcd9b-2b7d-4af4-93df-9e1e7b1d1518",
+            "Value": {
+                "id": "d66af48b-b3b2-4863-9e93-0c9669b6b80d",
+                "resourcePath": "sprites\\s_portal_ruins\\s_portal_ruins.yy",
                 "resourceType": "GMSprite"
             }
         },

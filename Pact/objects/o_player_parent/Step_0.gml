@@ -158,6 +158,7 @@
 			}else{
 				var proj = instance_create_layer(x + 32 * dir, y - 20, "Instances", o_projectile);
 			}
+			proj.lifetime = room_speed * 10;
 			proj.dir = dir;
 			proj.ID = ID;
 			soulFrags --;

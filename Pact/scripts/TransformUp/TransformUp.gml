@@ -15,6 +15,7 @@ Sprite[AIR, DODGE] = s_deer_dodge;
 Sprite[GROUND, DODGE] = s_deer_dodge;
 Sprite[GROUND, TRANSFORM] = s_cultist_transform;
 Sprite[AIR, TRANSFORM] = s_cultist_transform;
+Sprite[GROUND, HEAL] = s_deer_heal;
 
 attack_timer = 6;
 max_speed = 10;
