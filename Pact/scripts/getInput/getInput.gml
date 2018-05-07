@@ -10,7 +10,7 @@ input_alt_attack	= keyboard_check(ord("X"));
 input_jump			= keyboard_check_pressed(vk_space);
 input_dodge			= keyboard_check_pressed(vk_shift);
 input_heal			= keyboard_check(ord("Z"));
-input_transform		= keyboard_check_pressed(ord(""));
+input_transform		= keyboard_check_pressed(ord("V"));
 
 x_input = input_right - input_left;
 y_input = input_down - input_up;
