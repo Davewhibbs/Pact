@@ -6,7 +6,7 @@ if active == true {
 	// Check timer
 	if alarm[0] <= 0 {
 		// Detect Gamepad input
-		if gamepad_axis_value(0, gp_axislh) > .25 || gamepad_axis_value(0, gp_axislh) < -.25{
+		if gamepad_axis_value(0, gp_axislh) > .25 || gamepad_axis_value(0, gp_axislh) < -.25 || gamepad_axis_value(1, gp_axislh) > .25 || gamepad_axis_value(1, gp_axislh) < -.25 || gamepad_axis_value(2, gp_axislh) > .25 || gamepad_axis_value(2, gp_axislh) < -.25 || gamepad_axis_value(3, gp_axislh) > .25 || gamepad_axis_value(3, gp_axislh) < -.25{
 			// switch active off
 			active = false;
 			
@@ -16,7 +16,7 @@ if active == true {
 	}
 	
 	// if A is pressed, quit the game
-	if gamepad_button_check_released(0, gp_face1){
+	if gamepad_button_check_released(0, gp_face1) || gamepad_button_check_released(1, gp_face1) || gamepad_button_check_released(2, gp_face1) || gamepad_button_check_released(3, gp_face1){
 		game_end();
 	}
 	
@@ -26,7 +26,7 @@ if active == true {
 else{
 	if alarm[0] <= 0{
 		// Detect Gamepad input
-		if gamepad_axis_value(0, gp_axislh) > .25 || gamepad_axis_value(0, gp_axislh) < -.25{
+		if gamepad_axis_value(0, gp_axislh) > .25 || gamepad_axis_value(0, gp_axislh) < -.25 || gamepad_axis_value(1, gp_axislh) > .25 || gamepad_axis_value(1, gp_axislh) < -.25 || gamepad_axis_value(2, gp_axislh) > .25 || gamepad_axis_value(2, gp_axislh) < -.25 || gamepad_axis_value(3, gp_axislh) > .25 || gamepad_axis_value(3, gp_axislh) < -.25{
 			// switch active on
 			active = true;
 			

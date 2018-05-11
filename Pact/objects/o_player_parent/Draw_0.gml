@@ -43,6 +43,8 @@ if (flash > 0){
 
 
 #region Draw soul fragments around the player
+// Only draw them when the player is alive
+if state != states.death{
 switch (soulFrags) {
 	case 0: break;
 	
@@ -68,6 +70,7 @@ switch (soulFrags) {
 		
 		// Third soul frag appears to left
 		draw_sprite(s_soulFragment, image_index, x+15, y-75);
+}
 }
 #endregion
 
