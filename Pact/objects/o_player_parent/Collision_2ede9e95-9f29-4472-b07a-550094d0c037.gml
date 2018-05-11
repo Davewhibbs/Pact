@@ -27,6 +27,9 @@ if (state == states.neutral || state == states.healing || state == states.attack
 		
 		// destroy the hitbox so it doesn't hurt you again
 		instance_destroy(other);
+		
+		// create hit particle
+		instance_create_layer(x, y, "Particles", o_hit_effect);
 	}
 }
 

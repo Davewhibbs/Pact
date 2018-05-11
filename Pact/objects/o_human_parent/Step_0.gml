@@ -107,17 +107,38 @@ else if(state == human_states.hurt){
 	// BEHAVIOR
 	// Wait until stun timer is over, then switch to wander
 	
-	// Bounce off walls
-	if(place_meeting(x+velocity[h], y, o_wall)){
-		while(!place_meeting(x+1*dir, y, o_wall)){
-			x+=dir;
-		}
-		dir*= -1;
-		velocity[h] *= -1;
-	}
-	
 	// Accelerate only with gravity
 	velocity[v] = Approach(velocity[v], fall_speed, grav);
+	
+	// Bounce off walls
+	// WALL COLLISION
+	// Horizontal
+	if(place_meeting(x + velocity[h], y, o_wall)){
+		repeat(abs(velocity[h])){
+			if(!place_meeting(x + sign(velocity[h]), y, o_wall)){
+				x += sign(velocity[h]);	
+			} else {
+				break;
+			}
+		}
+		// turn around at a wall
+		velocity[@ h] = 0;
+		dir *= -1;
+	}
+	
+	// Vertical
+	if(place_meeting(x, y + velocity[v], o_wall)){
+		repeat(abs(velocity[v])){
+			if(!place_meeting(x, y + sign(velocity[v]), o_wall)){
+				y += sign(velocity[v]);	
+			} else {
+				break;
+			}
+		}
+		velocity[@ v] = 0;
+	}
+	
+	
 	
 	// TRANSITION TRIGGERS
 	if (alarm[5] <= 0){

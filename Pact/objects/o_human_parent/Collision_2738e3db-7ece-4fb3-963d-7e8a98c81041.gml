@@ -17,6 +17,9 @@ if (state == human_states.wander || state == human_states.attack )
 			velocity[v] = other.y_Force;
 			state = human_states.hurt;						// Switch to hurt state	
 		}
+		
+		// create hit effectr
+		instance_create_layer(x, y, "Particles", o_hit_effect);
 	}
 }
 
