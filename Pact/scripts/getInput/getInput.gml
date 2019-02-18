@@ -27,12 +27,12 @@ if gamepad_is_connected(ID)
 	var haxis = gamepad_axis_value(ID, gp_axislh);
 	var vaxis = gamepad_axis_value(ID, gp_axislv);
 	
-	input_attack = gamepad_button_check_pressed(ID, gp_face3);
-	input_alt_attack = gamepad_button_check_pressed(ID, gp_face4);
-	input_jump	 = gamepad_button_check_pressed(ID, gp_face1);
-	input_dodge	 = gamepad_button_check_pressed(ID, gp_shoulderrb);
-	input_transform = gamepad_button_check_pressed(ID, gp_shoulderlb);
-	input_heal	 = gamepad_button_check(ID, gp_face2);
+	input_attack		= gamepad_button_check_pressed(ID, gp_face3);
+	input_alt_attack	= gamepad_button_check_pressed(ID, gp_face4);
+	input_jump			= gamepad_button_check_pressed(ID, gp_face1);
+	input_dodge			= gamepad_button_check_pressed(ID, gp_shoulderrb);
+	input_transform		= gamepad_button_check_pressed(ID, gp_shoulderlb);
+	input_heal			= gamepad_button_check(ID, gp_face2);
 	
 	
 	x_input = haxis;
